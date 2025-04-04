@@ -3,7 +3,7 @@ import React from "react";
 
 function Navbar() {
   return (
-    <div className="min-w-[100vw] mt-5 flex flex-row items-center justify-center gap-2">
+    <div className="min-w-[100vw] my-5 flex flex-row items-center justify-center gap-2">
       <div
         onClick={() => (window.location.href = "/")}
         className="border-2 border-[#363636] flex flex-row items-center justify-center px-20 py-2.5 rounded-lg gap-2 cursor-pointer"
