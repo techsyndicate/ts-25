@@ -6,16 +6,16 @@ function Navbar() {
   const router = useRouter();
 
   return (
-    <div className="my-5 flex flex-row items-center justify-center gap-2">
+    <div className="my-[1.2vw] flex flex-row items-center justify-center gap-[0.7vw]">
       <div
         onClick={() => (window.location.href = "/")}
-        className="border-2 border-[#363636] flex flex-row items-center justify-center px-20 py-2.5 rounded-lg gap-2 cursor-pointer"
+        className="border-2 border-[#363636] flex flex-row items-center justify-center px-[6vw] py-[0.68vw] rounded-lg gap-[0.5vw] cursor-pointer"
       >
-        <img src="./tsLogo.svg" alt="TS Logo" className="size-6" />
+        <img src="./tsLogo.svg" alt="TS Logo" className="size-[1.5vw]" />
         <h1>Tech Syndicate</h1>
       </div>
-      <div className="bg-[#191919] py-3 px-20 flex flex-row items-center justify-center rounded-lg">
-        <div className="flex flex-row items-center justify-center gap-7">
+      <div className="bg-[#191919] py-[1.8vh] px-[5vw] flex flex-row items-center justify-center rounded-lg">
+        <div className="flex flex-row items-center justify-center gap-[2vw]">
           <p
             className="cursor-pointer"
             onClick={() => {
