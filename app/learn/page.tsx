@@ -27,10 +27,11 @@ function ResourcesPage() {
         </button>
       </div>
 
-
       <div className="w-[75vw] relative mx-[12.5vw] mt-[10vh]">
-
-        <img src="/waves.png" className="w-[5vw] h-[2.2vw] absolute top-[-0.8vw] left-[26.5vw] z-20"></img>
+        <img
+          src="/waves.png"
+          className="w-[5vw] h-[2.2vw] absolute top-[-0.8vw] left-[26.5vw] z-20"
+        ></img>
 
         <ResourceCard
           width="w-[30vw]"
@@ -57,7 +58,7 @@ function ResourcesPage() {
           color="text-white"
           knowMoreColor="text-white"
         ></ResourceCard>
-        
+
         <ResourceCard
           width="w-[23vw]"
           height="h-[25vw]"
@@ -107,7 +108,6 @@ function ResourcesPage() {
           bgcolor="bg-[#16e16e]"
           color="text-black"
         ></ResourceCard>
-
       </div>
     </div>
   );
