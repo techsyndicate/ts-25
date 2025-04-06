@@ -7,9 +7,9 @@ import Navbar from "@/components/Navbar";
 function ResourcesPage() {
   const router = useRouter();
   return (
-    <div>
+    <div className="overflow-y-auto no-scrollbar h-screen w-screen">
       <Navbar />
-      <h1 className="text-3xl font-medium text-center mt-[15vh]">
+      <h1 className="text-3xl font-medium text-center mt-[15vh] ">
         LEARNING RESOURCES
       </h1>
       <p className="w-[30vw] text-center ml-[35vw] text-[#aaa] text-sm mt-[3vh]">
