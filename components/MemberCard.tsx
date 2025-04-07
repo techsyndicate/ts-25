@@ -37,7 +37,7 @@ const MemberCard: React.FC<MemberCardProps> = ({
       <img
         src={image}
         alt={name}
-        className="sm:w-[25vw] w-[70vw] aspect-square object-cover sm:p-[2vw] p-[4vw]"
+        className="sm:w-[25vw] w-[70vw] aspect-square object-cover sm:p-[2vw] p-[4vw] sm:rounded-[2.6vw] rounded-[7vw]"
       />
       <h2 className="text-[#fff] sm:text-[2vw] text-[8vw]">{name}</h2>
       <h4 className="sm:text-[#8c8c8c] sm:text-[1.4vw] text-[5vw] sm:group-hover:text-[#16e16e] text-[#16e16e] transition-all duration-300">
