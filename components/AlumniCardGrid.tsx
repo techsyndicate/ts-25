@@ -32,25 +32,22 @@ const AlumniCardGrid: React.FC<AlumniGridProps> = ({ batch, alumnus = [] }) => {
   return (
     <>
       <div className="w-[80vw] flex flex-col items-center justify-center flex-wrap mt-[5vh] gap-[3vw] wrap-anywhere">
-        <h1 className="text-[3vw] text-[#16e16e] self-start">{batch}</h1>
+        <h1 className="sm:text-[3vw] text-[8vw] text-[#16e16e] self-start">{batch}</h1>
 
-        <div className="flex flex-row items-center justify-center flex-wrap mt-[2vh] gap-[3vw] wrap-anywhere">
+        <div className="sm:w-[80vw] flex sm:flex-row flex-col items-center justify-center sm:flex-wrap mb-[8vh] gap-[3vw] sm:wrap-anywhere">
           {alumnus.map((member, index) => {
             return (
-              <div
-                className="w-[20vw] h-[29vw] flex flex-col items-center mt-[2vh] bg-[#191919] rounded-[1vw] group relative "
-                key={index}
-              >
+              <div className="sm:w-[20vw] sm:h-[30vw] w-[70vw] h-[100vw] flex flex-col items-center mt-[4vh] bg-[#191919] sm:rounded-[1vw] rounded-[4vw] group relative " key={index}>
                 <img
                   src={member.pfp}
                   alt={member.name}
-                  className="w-[25vw] aspect-square object-cover p-[2vw]"
+                  className="sm:w-[25vw] w-[70vw] aspect-square object-cover sm:p-[2vw] p-[4vw]"
                 />
-                <h2 className="text-[#fff] text-[2vw]">{member.name}</h2>
-                <h4 className="text-[#8c8c8c] text-[1.4vw] group-hover:text-[#16e16e] transition-all duration-300">
+                <h2 className="text-[#fff] sm:text-[2vw] text-[8vw]">{member.name}</h2>
+                <h4 className="sm:text-[#8c8c8c] sm:text-[1.4vw] text-[5vw] sm:group-hover:text-[#16e16e] text-[#16e16e] transition-all duration-300 mt-[1vw]">
                   {member.exrole}
                 </h4>
-                <h4 className="text-[#8c8c8c] text-[1vw] mt-[0.6vw]">
+                <h4 className="text-[#8c8c8c] sm:text-[1vw] sm:mt-[0.6vw] text-[3vw] mt-[1vw]">
                   {member.status}
                 </h4>
               </div>

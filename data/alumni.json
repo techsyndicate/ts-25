@@ -6,55 +6,64 @@
         "name": "Yuvraj Mehta",
         "exrole": "President",
         "pfp": "https://www.dropbox.com/scl/fi/depb3v4fucutwko7j7te7/yuvraj.png?rlkey=2xg9gqywqolbv50s2o16nd4ze&st=dxox1fvx&raw=1",
-        "batch": "2024-2025"
+        "batch": "2024-2025",
+        "status": "Outgoing Batch"
       },
       {
         "name": "Nishant Navani",
         "exrole": "Vice President",
         "pfp": "https://www.dropbox.com/scl/fi/j0bwto326shyh7bqhtdyu/nishant.png?rlkey=f7szqzl6iox2djs72bm8sky0u&st=i4dtceyq&raw=1",
-        "batch": "2024-2025"
+        "batch": "2024-2025",
+        "status": "Outgoing Batch"
       },
       {
         "name": "Amogh Agrawal",
         "exrole": "Secretary",
         "pfp": "https://www.dropbox.com/scl/fi/k0x3bwafgoagzf11rznx5/moghi.png?rlkey=1kt180aoroadp8tcn5m6pdp3w&st=rl757ev6&raw=1",
-        "batch": "2024-2025"
+        "batch": "2024-2025",
+        "status": "Outgoing Batch"
       },
       {
         "name": "Aarth Shah",
         "exrole": "Joint Secretary",
         "pfp": "https://www.dropbox.com/scl/fi/gyid7kyxct98rpmien1kr/aarthshah.png?rlkey=qilosppmqo71aermihmfv37bx&st=njoz5q0q&raw=1",
-        "batch": "2024-2025"
+        "batch": "2024-2025",
+        "status": "Outgoing Batch"
       },
       {
         "name": "Uday Modi",
         "pfp": "https://www.dropbox.com/scl/fi/yl1u81ks984p9zgb5cp5e/udaymodi.png?rlkey=okw08upis7diupqb3o3ld3ztu&st=vzwnx87n&raw=1",
         "exrole": "Member",
-        "batch": "2024-2025"
+        "batch": "2024-2025",
+        "status": "Outgoing Batch"
       },
       {
         "name": "Aryan Soni",
         "exrole": "Member",
         "pfp": "https://www.dropbox.com/scl/fi/7qfpjgo1na0xq6vsm0qui/aryan.png?rlkey=8zxeoa17svvrye7q27slcdkxv&st=lvx1yjep&raw=1",
-        "batch": "2024-2025"
+        "batch": "2024-2025",
+        "status": "Outgoing Batch"
       },
       {
         "name": "Kaiwalya Jain",
         "exrole": "Member",
         "pfp": "https://www.dropbox.com/scl/fi/ave2yav4dwxqf1ab5kqxz/kaiwalya.png?rlkey=6aw8c2ua1cvpz2t1nup0gjiw9&st=qt3vo4n2&raw=1",
-        "batch": "2024-2025"
+        "batch": "2024-2025",
+        "status": "Outgoing Batch"
       },
       {
         "name": "Pranjall Pahuja",
         "pfp": "https://www.dropbox.com/scl/fi/x8geu7laaqi28ya5g95ua/pranjall.jpg?rlkey=8t0vl1of9s7rwqio9pu2lsnbz&st=wlrhwhk4&raw=1",
         "exrole": "Member",
-        "batch": "2024-2025"
+        "batch": "2024-2025",
+        "status": "Outgoing Batch"
       },
       {
         "name": "Ronith Taneja",
         "pfp": "https://www.dropbox.com/scl/fi/mlgpxefvjpf7j1yzcxj7a/ronith.jpg?rlkey=ezdl8oxjqb7t0vpipjrct3o2i&st=01q65feu&raw=1",
         "exrole": "Member",
-        "batch": "2024-2025"
+        "batch": "2024-2025",
+        "status": "Outgoing Batch"
       }
     ]
   },
