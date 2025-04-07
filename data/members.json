@@ -1,52 +1,8 @@
 [
   {
-    "name": "Yuvraj Mehta",
-    "role": "President",
-    "pfp": "https://www.dropbox.com/scl/fi/depb3v4fucutwko7j7te7/yuvraj.png?rlkey=2xg9gqywqolbv50s2o16nd4ze&st=dxox1fvx&raw=1",
-    "socials": [
-      "https://www.linkedin.com/in/yuvraj-mehta-021682241/",
-      "https://open.spotify.com/user/31hevavz7vm6yuuzx3b6khnzmunu?si=ef2b38d13f204205&nd=1&dlsi=3bed815b80e2476e",
-      "https://www.instagram.com/yuvrajmehta0_0/",
-      "mailto:yuvraj20007@gmail.com"
-    ]
-  },
-  {
-    "name": "Nishant Navani",
-    "role": "Vice President",
-    "pfp": "https://www.dropbox.com/scl/fi/j0bwto326shyh7bqhtdyu/nishant.png?rlkey=f7szqzl6iox2djs72bm8sky0u&st=i4dtceyq&raw=1",
-    "socials": [
-      "https://twitter.com/nishnavani",
-      "https://open.spotify.com/user/h5rrkbihhvx0b6d8atb84k4xi?si=32c03df6298549e1",
-      "https://www.instagram.com/nishh.8/",
-      "mailto:nishant.navani@gmail.com"
-    ]
-  },
-  {
-    "name": "Amogh Agrawal",
-    "role": "Secretary",
-    "pfp": "https://www.dropbox.com/scl/fi/k0x3bwafgoagzf11rznx5/moghi.png?rlkey=1kt180aoroadp8tcn5m6pdp3w&st=rl757ev6&raw=1",
-    "socials": [
-      "https://behance.net/amoghagrawal",
-      "https://www.artstation.com/amoghagrawal",
-      "https://www.instagram.com/amoghh_ag/",
-      "https://www.youtube.com/@amoghagrawal1"
-    ]
-  },
-  {
-    "name": "Aarth Shah",
-    "role": "Joint Secretary",
-    "pfp": "https://www.dropbox.com/scl/fi/gyid7kyxct98rpmien1kr/aarthshah.png?rlkey=qilosppmqo71aermihmfv37bx&st=njoz5q0q&raw=1",
-    "socials": [
-      "https://www.linkedin.com/in/aarth-shah-51247a279",
-      "https://spotify.link/lAMAJtHz4Db",
-      "https://www.instagram.com/aarth.sh/",
-      "mailto:aarth.shah07@gmail.com"
-    ]
-  },
-  {
     "name": "Jai Dugal",
     "pfp": "https://www.dropbox.com/scl/fi/j40x06qkdh865pk5rek4e/jaidugal.jpg?rlkey=1aekeci16hxhe2ihs4vjcjeic&st=e6jy1qqk&dl=0&raw=1",
-    "role": "Core",
+    "role": "President",
     "socials": [
       "https://spotify.link/uqH9ei9h5Db",
       "https://www.instagram.com/jai_dugal/",
@@ -56,7 +12,7 @@
   },
   {
     "name": "Prisha Bhatia",
-    "role": "Core",
+    "role": "Vice President",
     "pfp": "https://www.dropbox.com/scl/fi/j90fztm227kzn3xm0mb9n/final2.png?rlkey=cd456a17am83g0ywi3plfbbmn&st=yitijdfo&raw=1",
     "socials": [
       "https://github.com/PianoPianist",
@@ -66,15 +22,30 @@
     ]
   },
   {
-    "name": "Uday Modi",
-    "pfp": "https://www.dropbox.com/scl/fi/yl1u81ks984p9zgb5cp5e/udaymodi.png?rlkey=okw08upis7diupqb3o3ld3ztu&st=vzwnx87n&raw=1",
-    "role": "Member",
-    "socials": ["mailto:modi.uday10@gmail.com"]
+    "name": "Swastik Seth",
+    "pfp": "https://www.dropbox.com/scl/fi/t1atb27qllf5oln6kx1xe/swastik.jpg?rlkey=rjrv7kxg7rbycqaw555t9s4ki&st=oyqbv5p4&raw=1",
+    "role": "Secretary",
+    "socials": [
+      "https://open.spotify.com/user/31ejlkdjyu53u3oug26u4chmhv7m?si=RKt6VQ88ROC-RBTTl3jerQ",
+      "https://www.instagram.com/swastikseth._?igsh=MWlxM3Q4YmExaWxiOA==",
+      "https://x.com/swas1606?t=WCKU6GFDnlQja0ETXbtIVg&s=09"
+    ]
+  },
+  {
+    "name": "Ishit Rastogi",
+    "pfp": "https://www.dropbox.com/scl/fi/yprt5ymyoka0g5mvhrb81/ishit?rlkey=b6o55kf90s8mfhbsabc4y564m&st=cmmo2o2d&raw=1",
+    "role": "Joint Secretary",
+    "socials": [
+      "https://github.com/NotIshi28",
+      "https://www.linkedin.com/in/ishitrastogi/",
+      "https://www.behance.net/ishitrastogi",
+      "mailto:ishitrastogi@gmail.com"
+    ]
   },
   {
     "name": "Pakhi Bisht",
     "pfp": "https://www.dropbox.com/scl/fi/2sblfvgkasmh1s2vnndbq/pkibisht.jpg?rlkey=63w25hj37g3aa0hfpnr8r7lmj&st=tngon7xn&raw=1",
-    "role": "Member",
+    "role": "Core",
     "socials": [
       "https://github.com/Psych4-383",
       "https://open.spotify.com/user/pzf068qslhif7dunbfikc5j0p",
@@ -82,34 +53,13 @@
     ]
   },
   {
-    "name": "Aryan Soni",
-    "role": "Member",
-    "pfp": "https://www.dropbox.com/scl/fi/7qfpjgo1na0xq6vsm0qui/aryan.png?rlkey=8zxeoa17svvrye7q27slcdkxv&st=lvx1yjep&raw=1",
+    "name": "Shyamak Seth",
+    "pfp": "https://www.dropbox.com/scl/fi/ofgxjrbc8c9p7eozw5v5t/shyamu.png?rlkey=uak8e0mydsm4g7d5esnbww06g&st=0ai0a9hj&raw=1",
+    "role": "Core",
     "socials": [
-      "https://www.linkedin.com/in/aryansoni01/",
-      "https://open.spotify.com/user/0k18blw6t0png8seypurvf6p6?si=7f521de2103f44c0",
-      "https://www.instagram.com/aryan.gba/",
-      "mailto:aryansoni101a@gmail.com"
-    ]
-  },
-  {
-    "name": "Kaiwalya Jain",
-    "role": "Member",
-    "pfp": "https://www.dropbox.com/scl/fi/ave2yav4dwxqf1ab5kqxz/kaiwalya.png?rlkey=6aw8c2ua1cvpz2t1nup0gjiw9&st=qt3vo4n2&raw=1",
-    "socials": [
-      "https://www.instagram.com/kaiwalya_jain/",
-      "mailto:jain.kaiwalya@gmail.com"
-    ]
-  },
-  {
-    "name": "Ishani Verma",
-    "role": "Member",
-    "pfp": "https://www.dropbox.com/scl/fi/jnlxngx9k5uljazldtxbq/ishani.jpg?rlkey=okzcu6ek43fghuva9vm5atog8&st=e929ongf&raw=1",
-    "socials": [
-      "https://www.artstation.com/ishani-verma",
-      "https://www.behance.net/ishaniverma2",
-      "https://open.spotify.com/user/31us5yeuebkhnvd2qs2imz725qri?si=aa440907ccf5443c",
-      "mailto:ishani12verma@gmail.com"
+      "https://github.com/Shyamak-Seth",
+      "https://open.spotify.com/user/31ki3cswnsvdp7mhh23pdug4vf5i?si=abbffcf738824fb8",
+      "mailto:sethshyamak@gmail.com"
     ]
   },
   {
@@ -124,33 +74,23 @@
     ]
   },
   {
+    "name": "Ishani Verma",
+    "role": "Member",
+    "pfp": "https://www.dropbox.com/scl/fi/jnlxngx9k5uljazldtxbq/ishani.jpg?rlkey=okzcu6ek43fghuva9vm5atog8&st=e929ongf&raw=1",
+    "socials": [
+      "https://www.artstation.com/ishani-verma",
+      "https://www.behance.net/ishaniverma2",
+      "https://open.spotify.com/user/31us5yeuebkhnvd2qs2imz725qri?si=aa440907ccf5443c",
+      "mailto:ishani12verma@gmail.com"
+    ]
+  },
+  {
     "name": "Udayan Chowdhary",
     "pfp": "https://www.dropbox.com/scl/fi/gllhkufimuc7dbdmrd0mc/udayan.jpg?rlkey=wkqwcdplp3a365t1ovy7d1tll&st=p40m0ssj&raw=1",
     "role": "Member",
     "socials": [
       "https://www.instagram.com/udayan_chowdhary/",
       "mailto:udayan.chowdhary08@gmail.com"
-    ]
-  },
-  {
-    "name": "Ishit Rastogi",
-    "pfp": "https://www.dropbox.com/scl/fi/yprt5ymyoka0g5mvhrb81/ishit?rlkey=b6o55kf90s8mfhbsabc4y564m&st=cmmo2o2d&raw=1",
-    "role": "Member",
-    "socials": [
-      "https://github.com/NotIshi28",
-      "https://www.linkedin.com/in/ishitrastogi/",
-      "https://www.behance.net/ishitrastogi",
-      "mailto:ishitrastogi@gmail.com"
-    ]
-  },
-  {
-    "name": "Shyamak Seth",
-    "pfp": "https://www.dropbox.com/scl/fi/ofgxjrbc8c9p7eozw5v5t/shyamu.png?rlkey=uak8e0mydsm4g7d5esnbww06g&st=0ai0a9hj&raw=1",
-    "role": "Member",
-    "socials": [
-      "https://github.com/Shyamak-Seth",
-      "https://open.spotify.com/user/31ki3cswnsvdp7mhh23pdug4vf5i?si=abbffcf738824fb8",
-      "mailto:sethshyamak@gmail.com"
     ]
   },
   {
@@ -161,35 +101,6 @@
       "https://open.spotify.com/user/zsrce5b46sjn303d0yf6344lx?si=1c9332cae03546c6",
       "https://www.instagram.com/naitik_ag.30?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
       "https://www.youtube.com/channel/UC9zIC1A9UhqacFoV1lLlzVg"
-    ]
-  },
-  {
-    "name": "Pranjall Pahuja",
-    "pfp": "https://www.dropbox.com/scl/fi/x8geu7laaqi28ya5g95ua/pranjall.jpg?rlkey=8t0vl1of9s7rwqio9pu2lsnbz&st=wlrhwhk4&raw=1",
-    "role": "Member",
-    "socials": [
-      "https://open.spotify.com/user/uqd54vjolz1z4w4dpemd5ol3h?si=z9c3uinBThiW2UNY8Jr8Og",
-      "https://www.instagram.com/px0films?igsh=bzV5dTM5dHI3MGdr"
-    ]
-  },
-  {
-    "name": "Ronith Taneja",
-    "pfp": "https://www.dropbox.com/scl/fi/mlgpxefvjpf7j1yzcxj7a/ronith.jpg?rlkey=ezdl8oxjqb7t0vpipjrct3o2i&st=01q65feu&raw=1",
-    "role": "Member",
-    "socials": [
-      "https://open.spotify.com/user/31qhce4hyzsqcz4biq4dhpyx5vcy?si=iPiQQj27TDmkaIF7mTJeKw",
-      "https://youtube.com/@slayer_yt26?si=ZlP5ShRpsZgruS26",
-      "https://www.instagram.com/_slayeryt__?igsh=MTEzOWRxNmQyaDYyZA=="
-    ]
-  },
-  {
-    "name": "Swastik Seth",
-    "pfp": "https://www.dropbox.com/scl/fi/t1atb27qllf5oln6kx1xe/swastik.jpg?rlkey=rjrv7kxg7rbycqaw555t9s4ki&st=oyqbv5p4&raw=1",
-    "role": "Member",
-    "socials": [
-      "https://open.spotify.com/user/31ejlkdjyu53u3oug26u4chmhv7m?si=RKt6VQ88ROC-RBTTl3jerQ",
-      "https://www.instagram.com/swastikseth._?igsh=MWlxM3Q4YmExaWxiOA==",
-      "https://x.com/swas1606?t=WCKU6GFDnlQja0ETXbtIVg&s=09"
     ]
   },
   {
