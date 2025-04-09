@@ -33,8 +33,8 @@ const MemberCard: React.FC<MemberCardProps> = ({
   let platform = "";
   return (
     // <div className="w-[20vw] h-[27vw] flex flex-col items-center mt-[4vh] bg-[#191919] rounded-[1vw] group relative hover:h-[30vw] transition-all duration-300">
-    // <div className="sm:w-[19vw] sm:h-[27vw] w-[70vw] h-[100vw] flex flex-col items-center mt-[4vh] bg-[#191919] sm:rounded-[1vw] rounded-[4vw] group relative hover:scale-105 transition-all duration-300">
-    <div className="sm:w-[19vw] sm:h-[27vw] w-[70vw] h-[100vw] flex flex-col items-center mt-[4vh] bg-[#191919] sm:rounded-[1vw] rounded-[4vw] group relative">
+    <div className="sm:w-[19vw] sm:h-[27vw] w-[70vw] h-[100vw] flex flex-col items-center mt-[4vh] bg-[#191919] sm:rounded-[1vw] rounded-[4vw] group relative hover:scale-102 transition-all duration-300">
+    {/* // <div className="sm:w-[19vw] sm:h-[27vw] w-[70vw] h-[100vw] flex flex-col items-center mt-[4vh] bg-[#191919] sm:rounded-[1vw] rounded-[4vw] group relative"> */}
       <img
       src={image}
       alt={name}
