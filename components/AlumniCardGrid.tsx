@@ -31,16 +31,16 @@ interface AlumniGridProps {
 const AlumniCardGrid: React.FC<AlumniGridProps> = ({ batch, alumnus = [] }) => {
   return (
     <>
-      <div className="w-[80vw] flex flex-col items-center justify-center flex-wrap mt-[5vh] gap-[3vw] wrap-anywhere">
-        <h1 className="sm:text-[3vw] text-[8vw] text-[#16e16e] self-start">
+      <div className="w-[69vw] flex flex-col items-center justify-center flex-wrap mt-[5vh] gap-[3vw] wrap-anywhere">
+        <h1 className="sm:text-[3vw] text-[8vw] text-[#16e16e] self-start mt-[2vw]">
           {batch}
         </h1>
 
-        <div className="sm:w-[80vw] flex sm:flex-row flex-col items-center justify-center sm:flex-wrap mb-[8vh] gap-[3vw] sm:wrap-anywhere">
+        <div className="sm:w-[69vw] flex sm:flex-row flex-col items-center justify-center sm:flex-wrap mb-[8vh] gap-[3vw] sm:gap-[6vw] sm:wrap-anywhere">
           {alumnus.map((member, index) => {
             return (
               <div
-                className="sm:w-[20vw] sm:h-[30vw] w-[70vw] h-[100vw] flex flex-col items-center mt-[4vh] bg-[#191919] sm:rounded-[1vw] rounded-[4vw] group relative "
+                className="sm:w-[19vw] sm:h-[29vw] w-[70vw] h-[100vw] flex flex-col items-center mt-[4vh] bg-[#191919] sm:rounded-[1vw] rounded-[4vw] group relative "
                 key={index}
               >
                 <img
