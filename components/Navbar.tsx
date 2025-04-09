@@ -6,7 +6,7 @@ function Navbar() {
   const router = useRouter();
 
   return (
-    <div className="my-[1.2vw] flex flex-row items-center justify-center gap-[0.7vw]">
+    <div className="my-[1.8vw] flex flex-row items-center justify-center gap-[0.7vw]">
       <div
         onClick={() => (window.location.href = "/")}
         className="border-2 border-[#363636] flex flex-row items-center justify-center px-[6vw] py-[0.68vw] rounded-lg gap-[0.5vw] cursor-pointer"
