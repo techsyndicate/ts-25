@@ -33,6 +33,18 @@ function ResourcesPage() {
           className="w-[5vw] h-[2.2vw] absolute top-[-0.8vw] left-[26.5vw] z-20"
         ></img>
 
+        <img
+          src="/3d_cuboids.png"
+          className="w-[18vw] h-[17vw] z-50 absolute top-[11vw] left-[9vw] [clip-path:polygon(0%_29.41177%,100%_29.41177%,100%_100%,0%_100%)]"
+        ></img>
+
+        <img
+          src="/web_dev_circle.png"
+          className="w-[10vw] left-[40vw] top-[20vw] z-50 absolute [clip-path:polygon(0%_0%,100%_0%,100%_50%,0%_50%)]"
+        ></img>
+
+        <img src="/ctf_flag.png" className="absolute h-[7.5vw] top-[38.5vw] z-50 left-[70vw]"></img>
+
         <ResourceCard
           width="w-[30vw]"
           height="h-[15vw]"
@@ -88,7 +100,7 @@ function ResourcesPage() {
         ></ResourceCard>
 
         <ResourceCard
-          width="w-[30vw]"
+          width="w-[25vw]"
           height="h-[17vw]"
           title="A/V Editing"
           body="3D modelling is a vast field from low poly designs to realistically detailed environments..."
@@ -99,14 +111,16 @@ function ResourcesPage() {
         ></ResourceCard>
 
         <ResourceCard
-          width="w-[13vw]"
-          height="h-[17vw]"
-          title="Test"
-          body="No idea what to put here, so imma put completely random stuff."
+          width="w-[18vw]"
+          height="h-[20vw]"
+          title="CTF"
+          body="Capture the flag challenges are cyber security exercises where flags..."
           top="top-[26vw]"
-          left="left-[62vw]"
-          bgcolor="bg-[#16e16e]"
-          color="text-black"
+          left="left-[57vw]"
+          bgcolor="bg-[#be3144]"
+          color="text-white"
+          link="/"
+          knowMoreColor="pt-[1vw]"
         ></ResourceCard>
       </div>
     </div>
