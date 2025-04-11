@@ -18,6 +18,7 @@ function Events() {
         <EventCard
           title="Training Grounds"
           date="Apr 15 - May 6"
+          link="asdasd"
           styles="top-[9vw] left-[26.5vw]"
         />
         <img

@@ -10,7 +10,7 @@ interface EventCardProps {
 function EventCard(props: EventCardProps) {
   return (
     <div
-      className={`absolute w-[22vw] h-[25vh] rounded-lg bg-[#191919] ${props.styles} pt-[3vh] pl-[3vh]`}
+      className={`absolute w-[22vw] rounded-lg bg-[#191919] ${props.styles} py-[1.875vw] pl-[1.875vw]`}
     >
       <h1 className="text-[1.7vw] font-medium">{props.title}</h1>
       {props.date === "Coming Soon..." ? (
