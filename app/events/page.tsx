@@ -18,10 +18,10 @@ function Events() {
         <EventCard
           title="Training Grounds"
           date="Apr 15 - May 6"
-          styles="top-[20vh] left-[26.5vw]"
+          styles="top-[9vw] left-[26.5vw]"
         />
         <img
-          className="absolute top-[32.5vh] w-[17.3vw] left-[48.5vw]"
+          className="absolute top-[14.625vw] w-[17.3vw] left-[48.5vw]"
           src="./events/line1.svg"
           alt=""
         />
@@ -29,19 +29,19 @@ function Events() {
           title="Intech"
           date="Apr 15 - May 6"
           link="asdasd"
-          styles="top-[64vh] right-[26.5vw]"
+          styles="top-[28.8vw] right-[26.5vw]"
         />
         <img
-          className="absolute top-[70.5vh] w-[17.3vw] right-[48.5vw]"
+          className="absolute top-[31.725vw] w-[17.3vw] right-[48.5vw]"
           src="./events/line2.svg"
           alt=""
         />
         <EventCard
           title="Robotronics"
           date="Coming Soon..."
-          styles="top-[103vh] left-[26.5vw]"
+          styles="top-[46.36vw] left-[26.5vw]"
         />
-        <div className="absolute top-[128vh] left-[26.5vw] w-[22vw] h-[10vh] mb-[5vh]"></div>
+        <div className="absolute top-[57.6vw] left-[26.5vw] w-[22vw] h-[4.5vw] mb-[2.5vw]"></div>
       </div>
     </div>
   );
