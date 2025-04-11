@@ -27,7 +27,7 @@ function ResourcesPage() {
         </button>
       </div>
 
-      <div className="w-[75vw] relative mx-[12.5vw] mt-[10vh]">
+      <div className="w-[75vw] relative mx-[12.5vw] mt-[10vh] mb-[5vw]">
         <img
           src="/waves.png"
           className="w-[5vw] h-[2.2vw] absolute top-[-0.8vw] left-[26.5vw] z-20"
@@ -43,7 +43,15 @@ function ResourcesPage() {
           className="w-[10vw] left-[40vw] top-[20vw] z-50 absolute [clip-path:polygon(0%_0%,100%_0%,100%_50%,0%_50%)]"
         ></img>
 
-        <img src="/ctf_flag.png" className="absolute h-[7.5vw] top-[38.5vw] z-50 left-[70vw]"></img>
+        <img
+          src="/ctf_flag.png"
+          className="absolute h-[7.5vw] top-[38.5vw] z-50 left-[70vw]"
+        ></img>
+
+        <img
+          src="/quiz_illustration.png"
+          className="absolute w-[6vw] top-[45vw] z-50 left-[47vw]"
+        ></img>
 
         <ResourceCard
           width="w-[30vw]"
@@ -103,11 +111,13 @@ function ResourcesPage() {
           width="w-[25vw]"
           height="h-[17vw]"
           title="A/V Editing"
-          body="3D modelling is a vast field from low poly designs to realistically detailed environments..."
+          body="A/V can be categorized following types: Films, Motion Graphics, Animation, Videos..."
           top="top-[26vw]"
           left="left-[31vw]"
           bgcolor="bg-[#16181c]"
           color="text-white"
+          link="/"
+          knowMoreColor="text-[#6C57EE]"
         ></ResourceCard>
 
         <ResourceCard
@@ -121,6 +131,33 @@ function ResourcesPage() {
           color="text-white"
           link="/"
           knowMoreColor="pt-[1vw]"
+        ></ResourceCard>
+
+        <ResourceCard
+          width="w-[25vw]"
+          height="h-[28vw]"
+          title="Group Discussion"
+          body="Group discussion consists of a group of individuals having an intellectual discussion..."
+          top="top-[44vw]"
+          left="left-0"
+          bgcolor="bg-[#16181c]"
+          color="text-white"
+          link="/"
+          knowMoreColor="text-[#EE9657]"
+          banner="/gd_banner.png"
+          additionalHeading="mt-[5.5vw]"
+        ></ResourceCard>
+        
+        <ResourceCard
+          width="w-[27vw]"
+          height="h-[18vw]"
+          title="Quiz"
+          body="Quizzing is one of the most challenging events in any tech competition. It aims at testing..."
+          top="top-[44vw]"
+          left="left-[26vw]"
+          bgcolor="bg-[#319CBE]"
+          color="text-white w-[18vw]"
+          link="/"
         ></ResourceCard>
       </div>
     </div>

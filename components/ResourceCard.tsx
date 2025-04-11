@@ -12,7 +12,7 @@ function knowMoreButton(
   if (l) {
     return (
       <p
-        className={`${knowMoreColor} text-[1.2vw] mt-[1vw] cursor-pointer`}
+        className={`${knowMoreColor ? knowMoreColor : ""} text-[1.2vw] mt-[1vw] cursor-pointer`}
         onClick={() => {
           router.push(l);
         }}
