@@ -3,6 +3,14 @@ import React, { useEffect, useRef } from "react";
 import Navbar from "@/components/Navbar";
 import localFont from "next/font/local";
 import { Outfit } from "next/font/google";
+import {
+  faGithub,
+  faInstagram,
+  faFacebook,
+  faBehance,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const outfitFont = Outfit({
   variable: "--font-outfit",
@@ -110,11 +118,62 @@ export default function Home() {
             className="absolute bottom-[-2vh] left-[26vw] z-[-10] w-[15vw] parallax parallax-slow"
             alt=""
           />
-          <div className="absolute bottom-[7vh] right-[15.8vw] flex flex-row items-center justify-center gap-[1vw]">
-            <img className="w-[1.25vw]" src="./home/insta.svg" />
-            <img className="w-[1.25vw]" src="./home/gh.svg" alt="" />
-            <img className="w-[1.25vw]" src="./home/behance.svg" alt="" />
-            <img className="w-[1.25vw]" src="./home/facebook.svg" alt="" />
+          <div className="absolute bottom-[5vh] right-[16.1vw] flex flex-row gap-[1vw]">
+            <a
+              href="https://github.com/techsyndicate"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#fff] hover:text-[#16e16e] transition-all duration-300 items-center m-0 pt-0.5"
+            >
+              <FontAwesomeIcon
+                icon={faGithub}
+                className="sm:text-[1.2vw] text-[6vw] align-middle self-center"
+              />
+            </a>
+            <a
+              href="https://instagram.com/techsyndicate46"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#fff] hover:text-[#16e16e] transition-all duration-300 items-center m-0 pt-0.5"
+            >
+              <FontAwesomeIcon
+                icon={faInstagram}
+                className="sm:text-[1.2vw] text-[6vw] align-middle self-center"
+              />
+            </a>
+            <a
+              href="https://behance.net/techsyndicate46"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#fff] hover:text-[#16e16e] transition-all duration-300 items-center m-0 pt-0.5"
+            >
+              <FontAwesomeIcon
+                icon={faBehance}
+                className="sm:text-[1.2vw] text-[6vw] align-middle self-center"
+              />
+            </a>
+            <a
+              href="mailto:contact@techsyndicate.us"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#fff] hover:text-[#16e16e] transition-all duration-300 items-center m-0 pt-0.5"
+            >
+              <FontAwesomeIcon
+                icon={faEnvelope}
+                className="sm:text-[1.2vw] text-[6vw] align-middle self-center"
+              />
+            </a>
+            <a
+              href="https://www.facebook.com/syndicateofamity46"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#fff] hover:text-[#16e16e] transition-all duration-300 items-center m-0 pt-0.5"
+            >
+              <FontAwesomeIcon
+                icon={faFacebook}
+                className="sm:text-[1.2vw] text-[6vw] align-middle self-center"
+              />
+            </a>
           </div>
         </div>
         <img
