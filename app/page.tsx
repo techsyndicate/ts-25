@@ -137,7 +137,7 @@ export default function Home() {
         </div>
         <div className="relative h-[100vw]">
           <div className="absolute bottom-[10vw] w-[60vw] left-[20vw] z-[-100] aspect-square bg-[#16e16e] blur-[150px]" />
-          <div className="absolute bottom-[10vw] right-[20vw] w-[60vw] z-[100] flex flex-row justify-evenly">
+          <div className="absolute bottom-[-1vw] right-[20vw] w-[60vw] z-[100] flex flex-row justify-evenly">
             <a
               href="https://github.com/techsyndicate"
               target="_blank"

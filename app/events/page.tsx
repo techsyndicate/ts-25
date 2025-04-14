@@ -1,9 +1,36 @@
 "use client";
 import EventCard from "@/components/EventCard";
 import Navbar from "@/components/Navbar";
+import { useIsMobile } from "@/hooks/useIsMobile";
 import React from "react";
+import MobileEventCard from "@/components/MobileEventCard";
 
 function Events() {
+  const isMobile = useIsMobile();
+
+  if (isMobile) {
+    return (
+      <div className="flex flex-col items-center justify-center">
+        <Navbar />
+        <h1 className="text-[10vw]">EVENTS</h1>
+        <p className="text-[rgba(255,255,255,0.65)] w-[60vw] text-center mt-[3vw]">
+          Check out what’s happening at Tech Syndicate!
+        </p>
+        <div className="mt-[10vw] flex flex-col items-center justify-center">
+          <MobileEventCard title="Training Grounds" date="Apr 15 - May 6" />
+          <img src="./events/mobile/line1.svg" alt="" />
+          <MobileEventCard
+            title="InTech"
+            date="Apr 15 - May 6"
+            link="asdasdasd"
+          />
+          <img src="./events/mobile/line2.svg" alt="" />
+          <MobileEventCard title="Robotronics" date="Coming Soon..." />
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className=" h-max">
       <Navbar />
