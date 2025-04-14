@@ -77,11 +77,11 @@ export default function Home() {
 
   if (isMobile) {
     return (
-      <div className="overflow-hidden">
+      <div className="relative h-[100vh] overflow-x-hidden">
         <Navbar />
-        <div className="relative mb-[5vh] z-[100]">
+        <div className="relative mb-[10vw] z-[100]">
           <h1
-            className={`${headingFont.className} text-[52.5vw] mt-[-10vh] text-center`}
+            className={`${headingFont.className} text-[52.5vw] mt-[-21vw] text-center`}
             style={{
               backgroundImage:
                 "linear-gradient(179deg, #16E16E 0.45%, #084422 126.49%)",
@@ -93,7 +93,7 @@ export default function Home() {
             TECH
           </h1>
           <h1
-            className={`${headingFont.className} text-[24vw] mt-[-11vh] text-center`}
+            className={`${headingFont.className} text-[24vw] mt-[-21.5vw] text-center`}
             style={{
               backgroundImage:
                 "linear-gradient(179deg, #FFF 0.45%, #5A5A5A 126.49%)",
@@ -116,88 +116,90 @@ export default function Home() {
           />
           <img
             src="./home/camera.svg"
-            className="absolute bottom-[12vh] left-[12vw] z-[-10] w-[34vw]"
+            className="absolute bottom-[25.9vw] left-[12vw] z-[-10] w-[34vw]"
             alt=""
           />
           <img
             src="./home/cube.svg"
-            className="absolute bottom-[9vh] right-[7vw] z-[-10] w-[30vw]"
+            className="absolute bottom-[19.4vw] right-[7vw] z-[-10] w-[30vw]"
             alt=""
           />
           <img
             src="./home/camera2.svg"
-            className="absolute bottom-[-5vh] left-[0vw] w-[40vw]"
+            className="absolute bottom-[-10vw] left-[0vw] w-[40vw]"
             alt=""
           />
           <img
             src="./home/cam3.svg"
-            className="absolute bottom-[-5vh] z-[100] right-[0vw] w-[30vw]"
+            className="absolute bottom-[-10vw] z-[100] right-[0vw] w-[30vw]"
             alt=""
           />
         </div>
-        <div className="absolute bottom-[5vh] w-[60vw] left-[20vw] z-[-100] aspect-square bg-[#16e16e] blur-[150px]" />
-        <div className="absolute bottom-[5vh] right-[20vw] w-[60vw] z-[100] flex flex-row justify-evenly">
-          <a
-            href="https://github.com/techsyndicate"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#ABABAB] hover:text-[#16e16e] transition-all duration-300 items-center m-0 pt-0.5"
-          >
-            <FontAwesomeIcon
-              icon={faGithub}
-              className="sm:text-[1.2vw] text-[6vw] align-middle self-center"
-            />
-          </a>
-          <a
-            href="https://instagram.com/techsyndicate46"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#ABABAB] hover:text-[#16e16e] transition-all duration-300 items-center m-0 pt-0.5"
-          >
-            <FontAwesomeIcon
-              icon={faInstagram}
-              className="sm:text-[1.2vw] text-[6vw] align-middle self-center"
-            />
-          </a>
-          <a
-            href="https://behance.net/techsyndicate46"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#ABABAB] hover:text-[#16e16e] transition-all duration-300 items-center m-0 pt-0.5"
-          >
-            <FontAwesomeIcon
-              icon={faBehance}
-              className="sm:text-[1.2vw] text-[6vw] align-middle self-center"
-            />
-          </a>
-          <a
-            href="mailto:contact@techsyndicate.us"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#ABABAB] hover:text-[#16e16e] transition-all duration-300 items-center m-0 pt-0.5"
-          >
-            <FontAwesomeIcon
-              icon={faEnvelope}
-              className="sm:text-[1.2vw] text-[6vw] align-middle self-center"
-            />
-          </a>
-          <a
-            href="https://www.facebook.com/syndicateofamity46"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#ABABAB] hover:text-[#16e16e] transition-all duration-300 items-center m-0 pt-0.5"
-          >
-            <FontAwesomeIcon
-              icon={faFacebook}
-              className="sm:text-[1.2vw] text-[6vw] align-middle self-center"
-            />
-          </a>
+        <div className="relative h-[100vw]">
+          <div className="absolute bottom-[10vw] w-[60vw] left-[20vw] z-[-100] aspect-square bg-[#16e16e] blur-[150px]" />
+          <div className="absolute bottom-[10vw] right-[20vw] w-[60vw] z-[100] flex flex-row justify-evenly">
+            <a
+              href="https://github.com/techsyndicate"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#ABABAB] hover:text-[#16e16e] transition-all duration-300 items-center m-0 pt-0.5"
+            >
+              <FontAwesomeIcon
+                icon={faGithub}
+                className="sm:text-[1.2vw] text-[6vw] align-middle self-center"
+              />
+            </a>
+            <a
+              href="https://instagram.com/techsyndicate46"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#ABABAB] hover:text-[#16e16e] transition-all duration-300 items-center m-0 pt-0.5"
+            >
+              <FontAwesomeIcon
+                icon={faInstagram}
+                className="sm:text-[1.2vw] text-[6vw] align-middle self-center"
+              />
+            </a>
+            <a
+              href="https://behance.net/techsyndicate46"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#ABABAB] hover:text-[#16e16e] transition-all duration-300 items-center m-0 pt-0.5"
+            >
+              <FontAwesomeIcon
+                icon={faBehance}
+                className="sm:text-[1.2vw] text-[6vw] align-middle self-center"
+              />
+            </a>
+            <a
+              href="mailto:contact@techsyndicate.us"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#ABABAB] hover:text-[#16e16e] transition-all duration-300 items-center m-0 pt-0.5"
+            >
+              <FontAwesomeIcon
+                icon={faEnvelope}
+                className="sm:text-[1.2vw] text-[6vw] align-middle self-center"
+              />
+            </a>
+            <a
+              href="https://www.facebook.com/syndicateofamity46"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#ABABAB] hover:text-[#16e16e] transition-all duration-300 items-center m-0 pt-0.5"
+            >
+              <FontAwesomeIcon
+                icon={faFacebook}
+                className="sm:text-[1.2vw] text-[6vw] align-middle self-center"
+              />
+            </a>
+          </div>
+          <img
+            src="./home/mobile-man.svg"
+            className="absolute w-[100vw] bottom-[-10vw]"
+            alt=""
+          />
         </div>
-        <img
-          src="./home/mobile-man.svg"
-          className="absolute bottom-0 w-[56vh]"
-          alt=""
-        />
       </div>
     );
   }
