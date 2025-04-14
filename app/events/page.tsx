@@ -10,13 +10,13 @@ function Events() {
 
   if (isMobile) {
     return (
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center overflow-visible h-[100vh] ">
         <Navbar />
         <h1 className="text-[10vw]">EVENTS</h1>
         <p className="text-[rgba(255,255,255,0.65)] w-[60vw] text-center mt-[3vw]">
           Check out what’s happening at Tech Syndicate!
         </p>
-        <div className="mt-[10vw] flex flex-col items-center justify-center">
+        <div className="mt-[10vw] flex flex-col items-center justify-center overflow-scroll">
           <MobileEventCard title="Training Grounds" date="Apr 15 - May 6" />
           <img src="./events/mobile/line1.svg" alt="" />
           <MobileEventCard
@@ -26,6 +26,7 @@ function Events() {
           />
           <img src="./events/mobile/line2.svg" alt="" />
           <MobileEventCard title="Robotronics" date="Coming Soon..." />
+          <div className="w-[100%] h-[12vw]"></div>
         </div>
       </div>
     );
