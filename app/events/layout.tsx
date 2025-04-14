@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 
 const outfitFont = Outfit({
   variable: "--font-outfit",
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "Tech Syndicate is the technology club of Amity International School, Sector-46, Gurgaon. Revolutionize!",
 };
 
-export default function RootLayout({
+export default function EventLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -24,7 +24,7 @@ export default function RootLayout({
         <link rel="icon" href="/tsLogo.png" type="image/png" sizes="any"></link>
       </head>
       <body
-        className={`${outfitFont.variable} ${outfitFont.className} antialiased m-0 overflow-hidden`}
+        className={`${outfitFont.variable} ${outfitFont.className} antialiased m-0 overflow-visible bg-[#000000] text-white`}
       >
         {children}
       </body>

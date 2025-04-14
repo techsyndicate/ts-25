@@ -1,9 +1,33 @@
 "use client";
 import React from "react";
 import { useRouter } from "next/navigation";
+import { useIsMobile } from "@/hooks/useIsMobile";
 
 function Navbar() {
   const router = useRouter();
+  const isMobile = useIsMobile();
+
+  if (isMobile) {
+    return (
+      <div className="w-[100vw] h-[14vh] flex flex-row items-center justify-center">
+        <div className="w-[81vw] h-[7vh] flex flex-row items-center justify-between border-2 border-[rgba(255,255,255,0.17)] rounded-lg px-[4vw]">
+          <div className="flex flex-row items-center">
+            <img
+              src="./tsLogo.svg"
+              alt="TS Logo"
+              className="size-[3vh] ml-[-1vw]"
+            />
+            <h1 className="ml-[2vw]">Tech Syndicate</h1>
+          </div>
+          <img
+            src="./hamburger-menu.svg"
+            className="w-[2vh] aspect-square"
+            alt=""
+          />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="my-[1.8vw] flex flex-row items-center justify-center gap-[0.7vw]">

@@ -11,6 +11,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useIsMobile } from "@/hooks/useIsMobile";
 
 const outfitFont = Outfit({
   variable: "--font-outfit",
@@ -25,6 +26,7 @@ export default function Home() {
   const mousePosition = useRef({ x: 0, y: 0 });
   const targetMousePosition = useRef({ x: 0, y: 0 });
   const animationFrameId = useRef<number | null>(null);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -73,8 +75,135 @@ export default function Home() {
     };
   }, []);
 
+  if (isMobile) {
+    return (
+      <div className="overflow-hidden">
+        <Navbar />
+        <div className="relative mb-[5vh] z-[100]">
+          <h1
+            className={`${headingFont.className} text-[52.5vw] mt-[-10vh] text-center`}
+            style={{
+              backgroundImage:
+                "linear-gradient(179deg, #16E16E 0.45%, #084422 126.49%)",
+              backgroundClip: "text",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}
+          >
+            TECH
+          </h1>
+          <h1
+            className={`${headingFont.className} text-[24vw] mt-[-11vh] text-center`}
+            style={{
+              backgroundImage:
+                "linear-gradient(179deg, #FFF 0.45%, #5A5A5A 126.49%)",
+              backgroundClip: "text",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}
+          >
+            SYNDICATE
+          </h1>
+          <img
+            src="./home/cinema.svg"
+            className="absolute top-[19vw] left-0 w-[24vw]"
+            alt=""
+          />
+          <img
+            src="./home/o1.svg"
+            className="absolute top-[12vw] w-[28vw] right-[-3vw]"
+            alt=""
+          />
+          <img
+            src="./home/camera.svg"
+            className="absolute bottom-[12vh] left-[12vw] z-[-10] w-[34vw]"
+            alt=""
+          />
+          <img
+            src="./home/cube.svg"
+            className="absolute bottom-[9vh] right-[7vw] z-[-10] w-[30vw]"
+            alt=""
+          />
+          <img
+            src="./home/camera2.svg"
+            className="absolute bottom-[-5vh] left-[0vw] w-[40vw]"
+            alt=""
+          />
+          <img
+            src="./home/cam3.svg"
+            className="absolute bottom-[-5vh] z-[100] right-[0vw] w-[30vw]"
+            alt=""
+          />
+        </div>
+        <div className="absolute bottom-[5vh] w-[60vw] left-[20vw] z-[-100] aspect-square bg-[#16e16e] blur-[150px]" />
+        <div className="absolute bottom-[5vh] right-[20vw] w-[60vw] z-[100] flex flex-row justify-evenly">
+          <a
+            href="https://github.com/techsyndicate"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#ABABAB] hover:text-[#16e16e] transition-all duration-300 items-center m-0 pt-0.5"
+          >
+            <FontAwesomeIcon
+              icon={faGithub}
+              className="sm:text-[1.2vw] text-[6vw] align-middle self-center"
+            />
+          </a>
+          <a
+            href="https://instagram.com/techsyndicate46"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#ABABAB] hover:text-[#16e16e] transition-all duration-300 items-center m-0 pt-0.5"
+          >
+            <FontAwesomeIcon
+              icon={faInstagram}
+              className="sm:text-[1.2vw] text-[6vw] align-middle self-center"
+            />
+          </a>
+          <a
+            href="https://behance.net/techsyndicate46"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#ABABAB] hover:text-[#16e16e] transition-all duration-300 items-center m-0 pt-0.5"
+          >
+            <FontAwesomeIcon
+              icon={faBehance}
+              className="sm:text-[1.2vw] text-[6vw] align-middle self-center"
+            />
+          </a>
+          <a
+            href="mailto:contact@techsyndicate.us"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#ABABAB] hover:text-[#16e16e] transition-all duration-300 items-center m-0 pt-0.5"
+          >
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              className="sm:text-[1.2vw] text-[6vw] align-middle self-center"
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/syndicateofamity46"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#ABABAB] hover:text-[#16e16e] transition-all duration-300 items-center m-0 pt-0.5"
+          >
+            <FontAwesomeIcon
+              icon={faFacebook}
+              className="sm:text-[1.2vw] text-[6vw] align-middle self-center"
+            />
+          </a>
+        </div>
+        <img
+          src="./home/mobile-man.svg"
+          className="absolute bottom-0 w-[56vh]"
+          alt=""
+        />
+      </div>
+    );
+  }
+
   return (
-    <body
+    <div
       className={`w-[100vw] h-[100vh] overflow-hidden ${outfitFont.variable} ${outfitFont.className} antialiased m-0`}
     >
       <div>
@@ -198,6 +327,6 @@ export default function Home() {
         />
         <div className="w-[20vw] absolute left-[39.5vw] z-[-100] aspect-square bg-[#16e16e] blur-[200px]" />
       </div>
-    </body>
+    </div>
   );
 }
