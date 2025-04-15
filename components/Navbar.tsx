@@ -53,7 +53,7 @@ function Navbar() {
     }
     return (
       <div className="w-[100vw] h-[14vh] flex flex-row items-center justify-center">
-        <div className="w-[81vw] h-[6vh] flex flex-row items-center justify-between border-2 border-[rgba(255,255,255,0.17)] rounded-lg px-[4vw]">
+        <div className="w-[81vw] h-[6vh] flex flex-row items-center justify-between outline-2 outline-[rgba(255,255,255,0.17)] rounded-lg px-[4vw]">
           <div className="flex flex-row items-center">
             <img
               src="./tsLogo.svg"
