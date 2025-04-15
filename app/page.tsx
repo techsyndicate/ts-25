@@ -27,6 +27,15 @@ export default function Home() {
   const targetMousePosition = useRef({ x: 0, y: 0 });
   const animationFrameId = useRef<number | null>(null);
   const isMobile = useIsMobile();
+  const [isLoading, setIsLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -74,6 +83,14 @@ export default function Home() {
       }
     };
   }, []);
+
+  if (isLoading) {
+    return (
+      <div className="h-screen flex items-center justify-center">
+        <div className="animate-pulse">Loading...</div>
+      </div>
+    );
+  }
 
   if (isMobile) {
     return (
