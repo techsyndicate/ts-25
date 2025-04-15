@@ -137,7 +137,7 @@ export default function Home() {
         </div>
         <div className="relative h-[100vw]">
           <div className="absolute bottom-[10vw] w-[60vw] left-[20vw] z-[-100] aspect-square bg-[#16e16e] blur-[150px]" />
-          <div className="absolute bottom-[-1vw] right-[20vw] w-[60vw] z-[100] flex flex-row justify-evenly">
+          <div className="absolute bottom-[3vw] right-[25vw] w-[50vw] z-[100] flex flex-row justify-evenly">
             <a
               href="https://github.com/techsyndicate"
               target="_blank"
@@ -146,7 +146,7 @@ export default function Home() {
             >
               <FontAwesomeIcon
                 icon={faGithub}
-                className="sm:text-[1.2vw] text-[6vw] align-middle self-center"
+                className="sm:text-[1.2vw] text-[5vw] align-middle self-center"
               />
             </a>
             <a
@@ -157,7 +157,7 @@ export default function Home() {
             >
               <FontAwesomeIcon
                 icon={faInstagram}
-                className="sm:text-[1.2vw] text-[6vw] align-middle self-center"
+                className="sm:text-[1.2vw] text-[5vw] align-middle self-center"
               />
             </a>
             <a
@@ -168,7 +168,7 @@ export default function Home() {
             >
               <FontAwesomeIcon
                 icon={faBehance}
-                className="sm:text-[1.2vw] text-[6vw] align-middle self-center"
+                className="sm:text-[1.2vw] text-[5vw] align-middle self-center"
               />
             </a>
             <a
@@ -179,7 +179,7 @@ export default function Home() {
             >
               <FontAwesomeIcon
                 icon={faEnvelope}
-                className="sm:text-[1.2vw] text-[6vw] align-middle self-center"
+                className="sm:text-[1.2vw] text-[5vw] align-middle self-center"
               />
             </a>
             <a
@@ -190,13 +190,13 @@ export default function Home() {
             >
               <FontAwesomeIcon
                 icon={faFacebook}
-                className="sm:text-[1.2vw] text-[6vw] align-middle self-center"
+                className="sm:text-[1.2vw] text-[5vw] align-middle self-center"
               />
             </a>
           </div>
           <img
             src="./home/mobile-man.svg"
-            className="absolute w-[100vw] bottom-[-10vw]"
+            className="absolute w-[100vw] bottom-[-7vw]"
             alt=""
           />
         </div>

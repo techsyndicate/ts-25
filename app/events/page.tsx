@@ -10,7 +10,7 @@ function Events() {
 
   if (isMobile) {
     return (
-      <div className="flex flex-col items-center justify-center overflow-visible h-[100vh] ">
+      <div className="flex flex-col items-center justify-center overflow-visible ">
         <Navbar />
         <h1 className="text-[10vw]">EVENTS</h1>
         <p className="text-[rgba(255,255,255,0.65)] w-[60vw] text-center mt-[3vw]">
