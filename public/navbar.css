@@ -1,0 +1,12 @@
+@keyframes moveDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.navbar {
+  animation: moveDown 0.5s ease-in-out;
+}

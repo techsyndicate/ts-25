@@ -7,12 +7,14 @@ import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.share
 function knowMoreButton(
   l: string | undefined,
   knowMoreColor: string | undefined,
-  router: AppRouterInstance,
+  router: AppRouterInstance
 ) {
   if (l) {
     return (
       <p
-        className={`${knowMoreColor ? knowMoreColor : ""} text-[1.2vw] mt-[1vw] cursor-pointer`}
+        className={`${
+          knowMoreColor ? knowMoreColor : ""
+        } text-[1.3vw] mt-[1vw] cursor-pointer`}
         onClick={() => {
           router.push(l);
         }}
@@ -75,7 +77,7 @@ function ResourceCard({
   const router = useRouter();
   return (
     <div
-      className={`rounded-[0.8vw] box-border p-[2.8vw] absolute ${width} ${height} ${top} ${left} ${bgcolor} ${color} ${
+      className={`rounded-[0.8vw] box-border p-[2.8vw] absolute ${width} ${height} ${top} ${left} ${bgcolor} ${
         additional ? additional : ""
       }`}
     >
@@ -87,7 +89,7 @@ function ResourceCard({
       >
         {title}
       </h1>
-      <p className={`${color} opacity-75 text-[1.2vw]`}>{body}</p>
+      <p className={`${color} opacity-75 text-[1.2vw] font-light`}>{body}</p>
       {knowMoreButton(link, knowMoreColor, router)}
     </div>
   );

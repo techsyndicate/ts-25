@@ -50,7 +50,42 @@ function ResourcesPage() {
 
         <img
           src="/quiz_illustration.png"
-          className="absolute w-[6vw] top-[45vw] z-50 left-[47vw]"
+          className="absolute w-[6vw] top-[47vw] z-50 left-[47vw]"
+        ></img>
+
+        <img
+          src="/quiz_illustration.png"
+          className="absolute w-[6vw] top-[47vw] z-50 left-[47vw]"
+        ></img>
+
+        <img
+          src="/learn/cross_illustration.svg"
+          className="absolute w-[9vw] top-[54vw] z-50 left-[69vw]"
+        ></img>
+
+        <img
+          src="/learn/cryptic_illustration.svg"
+          className="absolute w-[10vw] top-[78vw] z-50 left-[41vw]"
+        ></img>
+
+        <img
+          src="/learn/tool_illustration.svg"
+          className="absolute w-[7vw] top-[68.5vw] z-50 left-[68.5vw]"
+        ></img>
+
+        <img
+          src="/learn/gear_illustration.svg"
+          className="absolute w-[7vw] top-[79vw] z-50 left-[69vw]"
+        ></img>
+
+        <img
+          src="/learn/photo_illustration.svg"
+          className="absolute w-[7vw] top-[92.5vw] z-50 left-[15vw]"
+        ></img>
+
+        <img
+          src="/learn/prog_illustration.svg"
+          className="absolute w-[14vw] top-[87.25vw] z-50 left-[60vw]"
         ></img>
 
         <ResourceCard
@@ -91,11 +126,12 @@ function ResourcesPage() {
           color="text-black"
           knowMoreColor="text-black"
           banner="/2d_design_banner.png"
+          additionalHeading="text-black"
         ></ResourceCard>
 
         <ResourceCard
           width="w-[30vw]"
-          height="h-[27vw]"
+          height="h-[30vw]"
           link="/"
           title="3D Design"
           body="3D modelling is a vast field from low poly designs to realistically detailed environments..."
@@ -104,12 +140,12 @@ function ResourcesPage() {
           bgcolor="bg-[#8151ff]"
           color="text-white"
           additionalHeading="mt-[10vw]"
-          knowMoreColor="text-orange"
+          knowMoreColor="text-orange pt-[1vw]"
         ></ResourceCard>
 
         <ResourceCard
           width="w-[25vw]"
-          height="h-[17vw]"
+          height="h-[20vw]"
           title="A/V Editing"
           body="A/V can be categorized following types: Films, Motion Graphics, Animation, Videos..."
           top="top-[26vw]"
@@ -117,7 +153,7 @@ function ResourcesPage() {
           bgcolor="bg-[#16181c]"
           color="text-white"
           link="/"
-          knowMoreColor="text-[#6C57EE]"
+          knowMoreColor="text-[#6C57EE] pt-[1vw]"
         ></ResourceCard>
 
         <ResourceCard
@@ -138,7 +174,7 @@ function ResourcesPage() {
           height="h-[28vw]"
           title="Group Discussion"
           body="Group discussion consists of a group of individuals having an intellectual discussion..."
-          top="top-[44vw]"
+          top="top-[47vw]"
           left="left-0"
           bgcolor="bg-[#16181c]"
           color="text-white"
@@ -147,18 +183,87 @@ function ResourcesPage() {
           banner="/gd_banner.png"
           additionalHeading="mt-[5.5vw]"
         ></ResourceCard>
-        
+
         <ResourceCard
           width="w-[27vw]"
           height="h-[18vw]"
           title="Quiz"
           body="Quizzing is one of the most challenging events in any tech competition. It aims at testing..."
-          top="top-[44vw]"
+          top="top-[47vw]"
           left="left-[26vw]"
           bgcolor="bg-[#319CBE]"
           color="text-white w-[18vw]"
           link="/"
+          knowMoreColor="pt-[1vw]"
         ></ResourceCard>
+
+        <ResourceCard
+          width="w-[21vw]"
+          height="h-[20.6vw]"
+          title="Crossword"
+          body="Crossword is one of the most fun events that you’ll ever come across. It doesn’t require..."
+          top="top-[47vw]"
+          left="left-[54vw]"
+          bgcolor="bg-[#16181C]"
+          color="text-white w-[11vw]"
+          link="/"
+          knowMoreColor="text-[#7EEE57] mt-[2vw]"
+        ></ResourceCard>
+
+        <ResourceCard
+          width="w-[27vw]"
+          height="h-[20vw]"
+          title="Cryptic Hunts"
+          body="Cryptic hunts basically refer to scavenger hunts that are carried out over the internet..."
+          top="top-[66vw]"
+          left="left-[26vw]"
+          bgcolor="bg-[#BE7531]"
+          color="text-white w-[15vw] mt-[1.5vw]"
+          link="/"
+          knowMoreColor="text-[rgba(255,255,255,0.8)] mt-[1.5vw]"
+        ></ResourceCard>
+
+        <ResourceCard
+          width="w-[21vw]"
+          height="h-[17.5vw]"
+          title="Hardware"
+          body="Hardware is the part of a computer that is designed to perform a specific task..."
+          top="top-[68.5vw]"
+          left="left-[54vw]"
+          bgcolor="bg-[#16181C]"
+          color="text-white w-[14vw] mt-[0vw]"
+          link="/"
+          knowMoreColor="text-[#5793EE] mt-[1.9vw]"
+        ></ResourceCard>
+
+        <ResourceCard
+          width="w-[25vw]"
+          height="h-[22vw]"
+          title="Photography"
+          body="Photography is the art, application, and practice of creating durable images..."
+          top="top-[76vw]"
+          left="left-0"
+          bgcolor="bg-[#31BEA5]"
+          color="text-white mt-[2vw] w-[18vw]"
+          link="/"
+          knowMoreColor="text-[rgba(255,255,255,0.8)] mt-[4vw]"
+        ></ResourceCard>
+
+        <ResourceCard
+          width="w-[49vw]"
+          height="h-[11vw]"
+          title="Programming"
+          body="Programming is A Very Fun Mind Sport, As the name says..."
+          top="top-[87vw]"
+          left="left-[26vw]"
+          bgcolor="bg-[#16181C]"
+          color="text-white w-[45vw]"
+          link="/"
+          knowMoreColor="text-[#EE5784]"
+          additional="p-[2vw] mb-[4vw]"
+        ></ResourceCard>
+
+        <div className="absolute top-[98vw] w-[10vw] h-[4vw]"></div>
       </div>
     </div>
   );

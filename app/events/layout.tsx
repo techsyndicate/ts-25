@@ -24,7 +24,7 @@ export default function EventLayout({
         <link rel="icon" href="/tsLogo.png" type="image/png" sizes="any"></link>
       </head>
       <body
-        className={`${outfitFont.variable} ${outfitFont.className} antialiased m-0 overflow-scroll bg-[#000000] text-white`}
+        className={`${outfitFont.variable} ${outfitFont.className} antialiased m-0 overflow-x-hidden bg-[#000000] text-white`}
         style={{
           overflowY: "scroll",
         }}
