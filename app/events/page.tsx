@@ -27,6 +27,12 @@ function Events() {
 
   if (isMobile) {
     return (
+      <>
+      <style>{`
+        body {
+          overflow-y: auto;
+        }
+      `}</style>
       <div className="flex flex-col items-center justify-center overflow-visible ">
         <Navbar />
         <h1 className="text-[10vw]">EVENTS</h1>
@@ -46,9 +52,16 @@ function Events() {
           <div className="w-[100%] h-[12vw]"></div>
         </div>
       </div>
+      </>
     );
   } else {
     return (
+      <>
+      <style>{`
+        body {
+          overflow-y: auto;
+        }
+      `}</style>
       <div className=" h-max">
         <Navbar />
         <div className="flex flex-col items-center justify-center">
@@ -91,6 +104,7 @@ function Events() {
           <div className="absolute top-[57.6vw] left-[26.5vw] w-[22vw] h-[4.5vw] mb-[2.5vw]"></div>
         </div>
       </div>
+      </>
     );
   }
 }
