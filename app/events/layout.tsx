@@ -8,7 +8,7 @@ const outfitFont = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Tech Syndicate",
+  title: "Tech Syndicate | Events",
   description:
     "Tech Syndicate is the technology club of Amity International School, Sector-46, Gurgaon. Revolutionize!",
 };
