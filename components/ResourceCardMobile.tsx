@@ -14,9 +14,9 @@ function knowMoreButton(
       <p
         className={`${
           knowMoreColor ? knowMoreColor : ""
-        } text-[1.3vw] mt-[1vw] cursor-pointer`}
+        } text-[5vw] mt-[5vw] cursor-pointer`}
         onClick={() => {
-          window.open(l, "_blank", "noopener,noreferrer");
+          window.open(l, "_blank", "noopener, noreferrer");
         }}
       >
         Know More
@@ -44,14 +44,10 @@ function cardBanner(banner: string | undefined, width: string) {
 }
 
 interface ResourceCardProps {
-  width: string;
-  height: string;
   link?: string;
   title: string;
   body: string;
   banner?: string;
-  top: string;
-  left: string;
   bgcolor: string;
   color: string;
   additional?: string;
@@ -59,15 +55,11 @@ interface ResourceCardProps {
   knowMoreColor?: string;
 }
 
-function ResourceCard({
-  width,
-  height,
+function ResourceCardMobile({
   link,
   title,
   body,
   banner,
-  top,
-  left,
   bgcolor,
   color,
   additional,
@@ -77,22 +69,22 @@ function ResourceCard({
   const router = useRouter();
   return (
     <div
-      className={`rounded-[0.8vw] box-border p-[2.8vw] absolute ${width} ${height} ${top} ${left} ${bgcolor} ${
+      className={`rounded-[1.6vw] box-border p-[5.6vw] w-[80vw] ${bgcolor} ${
         additional ? additional : ""
       }`}
     >
-      {cardBanner(banner, width)}
+      {cardBanner(banner, "w-[80vw]")}
       <h1
-        className={`leading-[1.2] text-[1.9vw] mb-[1.5vh] ${
+        className={`leading-[1.2] text-[6vw] mb-[5vw] ${
           additionalHeading ? additionalHeading : ""
         }`}
       >
         {title}
       </h1>
-      <p className={`${color} opacity-75 text-[1.2vw] font-light`}>{body}</p>
+      <p className={`${color} opacity-75 font-light`}>{body}</p>
       {knowMoreButton(link, knowMoreColor, router)}
     </div>
   );
 }
 
-export default ResourceCard;
+export default ResourceCardMobile;

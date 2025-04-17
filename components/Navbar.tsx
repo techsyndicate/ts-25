@@ -2,11 +2,13 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 import { useIsMobile } from "@/hooks/useIsMobile";
+import { usePathname } from "next/navigation";
 
 function Navbar() {
   const router = useRouter();
   const isMobile = useIsMobile();
   const [isClicked, setIsClicked] = React.useState(false);
+  const pathname = usePathname();
 
   if (isMobile) {
     if (isClicked) {
@@ -85,7 +87,11 @@ function Navbar() {
       <div className="bg-[rgba(51,51,51,0.3)] bg- py-[1.8vh] px-[5vw] flex flex-row items-center justify-center rounded-lg">
         <div className="flex flex-row items-center justify-center gap-[2vw]">
           <p
-            className="cursor-pointer"
+            className={`cursor-pointer ${
+              pathname === "/learn"
+                ? "text-[#16e16e]"
+                : "text-[rgba(255,255,255,0.35)]"
+            }`}
             onClick={() => {
               router.push("/learn");
             }}
@@ -93,7 +99,11 @@ function Navbar() {
             Learn
           </p>
           <p
-            className="cursor-pointer"
+            className={`cursor-pointer ${
+              pathname === "/about"
+                ? "text-[#16e16e]"
+                : "text-[rgba(255,255,255,0.35)]"
+            }`}
             onClick={() => {
               router.push("/about");
             }}
@@ -101,7 +111,11 @@ function Navbar() {
             About
           </p>
           <p
-            className="cursor-pointer"
+            className={`cursor-pointer ${
+              pathname === "/team"
+                ? "text-[#16e16e]"
+                : "text-[rgba(255,255,255,0.35)]"
+            }`}
             onClick={() => {
               router.push("/team");
             }}
@@ -109,7 +123,11 @@ function Navbar() {
             Team
           </p>
           <p
-            className="cursor-pointer"
+            className={`cursor-pointer ${
+              pathname === "/events"
+                ? "text-[#16e16e]"
+                : "text-[rgba(255,255,255,0.35)]"
+            }`}
             onClick={() => {
               router.push("/events");
             }}
