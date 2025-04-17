@@ -205,7 +205,7 @@ function ResourcesPage() {
             <div className="relative">
               <img
                 src="/learn/illustrations/gear_illustration.svg"
-                className="w-[25vw] absolute bottom-[0vw] right-[0vw]"
+                className="w-[20vw] absolute bottom-[0vw] right-[0vw]"
                 alt=""
               />
               <ResourceCardMobile
@@ -221,7 +221,7 @@ function ResourcesPage() {
             <div className="relative">
               <img
                 src="/learn/illustrations/photo_illustration.svg"
-                className="w-[25vw] absolute bottom-0 right-[5vw]"
+                className="w-[20vw] absolute bottom-0 right-[5vw]"
                 alt=""
               />
               <ResourceCardMobile
