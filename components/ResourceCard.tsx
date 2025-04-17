@@ -16,7 +16,7 @@ function knowMoreButton(
           knowMoreColor ? knowMoreColor : ""
         } text-[1.3vw] mt-[1vw] cursor-pointer`}
         onClick={() => {
-          router.push(l);
+          window.open(l, "_blank", "noopener, noreferrer");
         }}
       >
         Know More

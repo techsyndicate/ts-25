@@ -19,9 +19,13 @@ function ResourcesPage() {
       <div className="flex items-center justify-center">
         <button
           onClick={() => {
-            router.push("/");
+            window.open(
+              "https://techsyndicate.notion.site/Learning-Resources-11076be83f5e4456a105af9f2394b8b5",
+              "_blank",
+              "noopener, noreferrer"
+            );
           }}
-          className="bg-[#161c17] px-[4vw] py-[2vh] rounded-[100vw] mt-[4.2vh] flex items-center gap-[0.4vw] text-[1.1vw]"
+          className="bg-[#161c17] cursor-pointer px-[4vw] py-[2vh] rounded-[100vw] mt-[4.2vh] flex items-center gap-[0.4vw] text-[1.1vw]"
         >
           NOTION <img src="/rightArrow.png" className="h-[0.9vw]"></img>
         </button>
@@ -29,69 +33,64 @@ function ResourcesPage() {
 
       <div className="w-[75vw] relative mx-[12.5vw] mt-[10vh] mb-[5vw]">
         <img
-          src="/waves.png"
+          src="/learn/waves.png"
           className="w-[5vw] h-[2.2vw] absolute top-[-0.8vw] left-[26.5vw] z-20"
         ></img>
 
         <img
-          src="/3d_cuboids.png"
+          src="/learn/illustrations/3d_cuboids.png"
           className="w-[18vw] h-[17vw] z-50 absolute top-[11vw] left-[9vw] [clip-path:polygon(0%_29.41177%,100%_29.41177%,100%_100%,0%_100%)]"
         ></img>
 
         <img
-          src="/web_dev_circle.png"
+          src="/learn/illustrations/web_dev_circle.png"
           className="w-[10vw] left-[40vw] top-[20vw] z-50 absolute [clip-path:polygon(0%_0%,100%_0%,100%_50%,0%_50%)]"
         ></img>
 
         <img
-          src="/ctf_flag.png"
+          src="/learn/illustrations/ctf_flag.png"
           className="absolute h-[7.5vw] top-[38.5vw] z-50 left-[70vw]"
         ></img>
 
         <img
-          src="/quiz_illustration.png"
+          src="/learn/illustrations/quiz_illustration.png"
           className="absolute w-[6vw] top-[47vw] z-50 left-[47vw]"
         ></img>
 
         <img
-          src="/quiz_illustration.png"
-          className="absolute w-[6vw] top-[47vw] z-50 left-[47vw]"
-        ></img>
-
-        <img
-          src="/learn/cross_illustration.svg"
+          src="/learn/illustrations/cross_illustration.svg"
           className="absolute w-[9vw] top-[54vw] z-50 left-[69vw]"
         ></img>
 
         <img
-          src="/learn/cryptic_illustration.svg"
+          src="/learn/illustrations/cryptic_illustration.svg"
           className="absolute w-[10vw] top-[78vw] z-50 left-[41vw]"
         ></img>
 
         <img
-          src="/learn/tool_illustration.svg"
+          src="/learn/illustrations/tool_illustration.svg"
           className="absolute w-[7vw] top-[68.5vw] z-50 left-[68.5vw]"
         ></img>
 
         <img
-          src="/learn/gear_illustration.svg"
+          src="/learn/illustrations/gear_illustration.svg"
           className="absolute w-[7vw] top-[79vw] z-50 left-[69vw]"
         ></img>
 
         <img
-          src="/learn/photo_illustration.svg"
+          src="/learn/illustrations/photo_illustration.svg"
           className="absolute w-[7vw] top-[92.5vw] z-50 left-[15vw]"
         ></img>
 
         <img
-          src="/learn/prog_illustration.svg"
+          src="/learn/illustrations/prog_illustration.svg"
           className="absolute w-[14vw] top-[87.25vw] z-50 left-[60vw]"
         ></img>
 
         <ResourceCard
           width="w-[30vw]"
           height="h-[15vw]"
-          link="/"
+          link="https://www.notion.so/techsyndicate/App-Development-3eeb461d6dea4c919dfec2179b7bced0?pvs=25"
           title="App Development"
           body="Mobile app development is, quite simply, the process of developing apps..."
           top="top-0"
@@ -104,7 +103,7 @@ function ResourcesPage() {
         <ResourceCard
           width="w-[20vw]"
           height="h-[25vw]"
-          link="/"
+          link="https://www.notion.so/techsyndicate/Web-Development-342122d8a41a47c2bf513a74aa99fbd9?pvs=25"
           title="Website Development"
           body="Web development essentially consists of two paradigms: frontend and backend development..."
           top="top-0"
@@ -117,7 +116,7 @@ function ResourcesPage() {
         <ResourceCard
           width="w-[23vw]"
           height="h-[25vw]"
-          link="/"
+          link="https://www.notion.so/techsyndicate/Design-6aa4300393a04f3fbf4b78e1fee67e7c?pvs=25"
           title="2D Design"
           body="Design is something that involves thorough planning as well as ideation of the way your product..."
           top="top-0"
@@ -125,14 +124,14 @@ function ResourcesPage() {
           bgcolor="bg-white"
           color="text-black"
           knowMoreColor="text-black"
-          banner="/2d_design_banner.png"
+          banner="/learn/banners/2d_design_banner.png"
           additionalHeading="text-black"
         ></ResourceCard>
 
         <ResourceCard
           width="w-[30vw]"
           height="h-[30vw]"
-          link="/"
+          link="https://techsyndicate.notion.site/3D-Design-c7cf7b5942c94e738d44914c7895d61d"
           title="3D Design"
           body="3D modelling is a vast field from low poly designs to realistically detailed environments..."
           top="top-[16vw]"
@@ -152,7 +151,7 @@ function ResourcesPage() {
           left="left-[31vw]"
           bgcolor="bg-[#16181c]"
           color="text-white"
-          link="/"
+          link="https://www.notion.so/techsyndicate/A-V-Editing-d20e21ef8e944470a9e0cdad92fbab1e?pvs=25"
           knowMoreColor="text-[#6C57EE] pt-[1vw]"
         ></ResourceCard>
 
@@ -165,7 +164,7 @@ function ResourcesPage() {
           left="left-[57vw]"
           bgcolor="bg-[#be3144]"
           color="text-white"
-          link="/"
+          link="https://www.notion.so/techsyndicate/Capture-The-Flag-a66386a75ce44bc79c51429b34250931?pvs=25"
           knowMoreColor="pt-[1vw]"
         ></ResourceCard>
 
@@ -178,9 +177,9 @@ function ResourcesPage() {
           left="left-0"
           bgcolor="bg-[#16181c]"
           color="text-white"
-          link="/"
+          link="https://www.notion.so/techsyndicate/Group-Discussion-903404e4ee1b4aa09e17746989e547b4?pvs=25"
           knowMoreColor="text-[#EE9657]"
-          banner="/gd_banner.png"
+          banner="/learn/banners/gd_banner.png"
           additionalHeading="mt-[5.5vw]"
         ></ResourceCard>
 
@@ -193,7 +192,7 @@ function ResourcesPage() {
           left="left-[26vw]"
           bgcolor="bg-[#319CBE]"
           color="text-white w-[18vw]"
-          link="/"
+          link="https://www.notion.so/techsyndicate/Quiz-a11151bcd8bd4b10b2d0d0ca702884d5?pvs=25"
           knowMoreColor="pt-[1vw]"
         ></ResourceCard>
 
@@ -206,7 +205,7 @@ function ResourcesPage() {
           left="left-[54vw]"
           bgcolor="bg-[#16181C]"
           color="text-white w-[11vw]"
-          link="/"
+          link="https://www.notion.so/techsyndicate/Crossword-4a4133cf77b848e0aeb639e9f169f9a6?pvs=25"
           knowMoreColor="text-[#7EEE57] mt-[2vw]"
         ></ResourceCard>
 
@@ -219,7 +218,7 @@ function ResourcesPage() {
           left="left-[26vw]"
           bgcolor="bg-[#BE7531]"
           color="text-white w-[15vw] mt-[1.5vw]"
-          link="/"
+          link="https://www.notion.so/techsyndicate/Cryptic-Hunts-f452885083b54d048187b0a7f053e231?pvs=25"
           knowMoreColor="text-[rgba(255,255,255,0.8)] mt-[1.5vw]"
         ></ResourceCard>
 
@@ -245,7 +244,7 @@ function ResourcesPage() {
           left="left-0"
           bgcolor="bg-[#31BEA5]"
           color="text-white mt-[2vw] w-[18vw]"
-          link="/"
+          link="https://www.notion.so/techsyndicate/Photography-2ae74af2944545328dd5f69a71218465?pvs=25"
           knowMoreColor="text-[rgba(255,255,255,0.8)] mt-[4vw]"
         ></ResourceCard>
 
@@ -258,7 +257,7 @@ function ResourcesPage() {
           left="left-[26vw]"
           bgcolor="bg-[#16181C]"
           color="text-white w-[45vw]"
-          link="/"
+          link="https://www.notion.so/techsyndicate/Programming-46280d608cab4b9bafe84187ffaed616?pvs=25"
           knowMoreColor="text-[#EE5784]"
           additional="p-[2vw] mb-[4vw]"
         ></ResourceCard>
