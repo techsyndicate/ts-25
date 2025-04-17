@@ -101,7 +101,7 @@ function Navbar() {
           <p
             className={`cursor-pointer hover:text-[#fff] transition-all duration-300 ${
               pathname === "/about"
-                ? "text-[#16e16e]"
+                ? "text-[#ffffff]"
                 : "text-[rgba(255,255,255,0.35)]"
             }`}
             onClick={() => {
@@ -113,7 +113,7 @@ function Navbar() {
           <p
             className={`cursor-pointer hover:text-[#fff] transition-all duration-300 ${
               pathname === "/team"
-                ? "text-[#16e16e]"
+                ? "text-[#ffffff]"
                 : "text-[rgba(255,255,255,0.35)]"
             }`}
             onClick={() => {
@@ -125,7 +125,7 @@ function Navbar() {
           <p
             className={`cursor-pointer hover:text-[#fff] transition-all duration-300 ${
               pathname === "/events"
-                ? "text-[#16e16e]"
+                ? "text-[#ffffff]"
                 : "text-[rgba(255,255,255,0.35)]"
             }`}
             onClick={() => {
