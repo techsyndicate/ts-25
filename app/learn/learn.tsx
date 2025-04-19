@@ -1,13 +1,11 @@
 "use client";
-import React, { ReactEventHandler } from "react";
-import { useRouter } from "next/navigation";
+import React from "react";
 import Navbar from "@/components/Navbar";
 import ResourceCard from "@/components/ResourceCard";
 import ResourceCardMobile from "@/components/ResourceCardMobile";
 import { useIsMobile } from "@/hooks/useIsMobile";
 
 function ResourcesPage() {
-  const router = useRouter();
   const isMobile = useIsMobile();
   const [isLoading, setIsLoading] = React.useState(true);
 
@@ -56,7 +54,7 @@ function ResourcesPage() {
             <div className="relative">
               <img
                 src="/learn/waves.png"
-                className="w-[20vw] absolute right-[-5vw] top-[-5vw]"
+                className="w-[7.5vw] absolute right-[-1.5vw] top-[-1.5vw]"
                 alt=""
               />
               <ResourceCardMobile

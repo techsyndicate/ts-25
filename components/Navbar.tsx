@@ -10,6 +10,29 @@ function Navbar() {
   const [isClicked, setIsClicked] = React.useState(false);
   const pathname = usePathname();
 
+  let page = "";
+
+  switch (pathname) {
+    case "/":
+      page = "Home";
+      break;
+    case "/learn":
+      page = "Learn";
+      break;
+    case "/about":
+      page = "About";
+      break;
+    case "/team":
+      page = "Team";
+      break;
+    case "/events":
+      page = "Events";
+      break;
+    default:
+      page = "404";
+      break;
+  }
+
   if (isMobile) {
     if (isClicked) {
       return (
@@ -23,7 +46,10 @@ function Navbar() {
                   alt="TS Logo"
                   className="size-[3vh] ml-[-1vw]"
                 />
-                <h1 className="ml-[2vw]">Tech Syndicate</h1>
+                <h1 className="ml-[2vw] text-[3.75vw]">
+                  Tech Syndicate
+                  <span className="text-[rgba(255,255,255,0.4)]">/{page}</span>
+                </h1>
               </div>
               <img
                 src="./hamburger-menu.svg"
@@ -62,7 +88,10 @@ function Navbar() {
               alt="TS Logo"
               className="size-[3vh] ml-[-1vw]"
             />
-            <h1 className="ml-[2vw]">Tech Syndicate</h1>
+            <h1 className="ml-[2vw] text-[3.75vw]">
+              Tech Syndicate
+              <span className="text-[rgba(255,255,255,0.4)]">/{page}</span>
+            </h1>
           </div>
           <img
             src="./hamburger-menu.svg"
