@@ -96,7 +96,7 @@ export default function Home() {
     return (
       <div className="relative h-[100vh] overflow-x-hidden">
         <Navbar />
-        <div className="relative mb-[10vw] z-[100]">
+        <div className="relative mb-[10vw] z-[1]">
           <h1
             className={`${headingFont.className} text-[52.5vw] mt-[-21vw] text-center`}
             style={{
