@@ -28,6 +28,9 @@ function Navbar() {
     case "/events":
       page = "Events";
       break;
+    case "/alumni":
+      page = "Alumni";
+      break;
     default:
       page = "404";
       break;

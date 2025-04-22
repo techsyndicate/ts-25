@@ -7,6 +7,20 @@ import { useRouter } from "next/navigation";
 
 function Team() {
   const router = useRouter();
+  const [isLoading, setIsLoading] = React.useState(true);
+  
+  React.useEffect(() => {
+    setIsLoading(false)
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div className="h-screen flex items-center justify-center">
+        <div className="animate-pulse">Loading...</div>
+      </div>
+    );
+  }
+
   return (
     <div className="overflow-y-auto no-scrollbar h-screen w-screen">
       <div className="flex items-center justify-center flex-col mb-[5vh]">
