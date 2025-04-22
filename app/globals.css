@@ -35,3 +35,36 @@ body {
     scrollbar-width: none; /* Firefox */
   }
 }
+
+.navbarAnimated {
+  animation-name: navbarAnimate;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  transform-origin: top;
+}
+
+.borderRemove {
+  animation-name: borderRemoval;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform-origin: top;
+}
+
+@keyframes navbarAnimate {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes borderRemoval {
+  0% {
+    
+  }
+  100% {
+    outline-color: rgba(255,255,255,0);
+  }
+}

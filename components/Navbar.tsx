@@ -37,9 +37,9 @@ function Navbar() {
     if (isClicked) {
       return (
         <div className="">
-          <div className="w-[100vw] h-[14vh] flex flex-row items-center" />
-          <div className="w-[100vw] h-[50vh] flex flex-col absolute top-0 bg-[#0d0d0d] z-[1000]">
-            <div className="w-[81vw] ml-[9.5vw] h-[6vh] mt-[4vh] flex flex-row items-center justify-between px-[4vw]">
+          <div className="relative z-[2] w-[100vw] h-[14vh] flex flex-row items-center justify-center bg-[#0d0d0d]" />
+          <div className="w-[100vw] flex flex-col absolute top-0 bg-[#0d0d0d]">
+            <div className="borderRemove z-[3] borderRemove outline-2 outline-[rgba(255,255,255,0.17)] rounded-lg w-[81vw] ml-[9.5vw] h-[6vh] mt-[4vh] flex flex-row items-center justify-between px-[4vw]">
               <div className="flex flex-row items-center">
                 <img
                   src="./tsLogo.svg"
@@ -58,7 +58,7 @@ function Navbar() {
                 onClick={() => setIsClicked(false)}
               />
             </div>
-            <div className="mt-[3vh] ml-[13vw] flex flex-col gap-[4vh] text-[4vw]">
+            <div className="mt-[1vh] z-[1] pt-[3vh] pl-[13vw] pb-[3vh] flex flex-col gap-[4vh] text-[4vw] navbarAnimated">
               <a href="/" className="text-[rgba(255,255,255,0.35)]">
                 Home
               </a>
@@ -80,7 +80,7 @@ function Navbar() {
       );
     }
     return (
-      <div className="w-[100vw] h-[14vh] flex flex-row items-center justify-center">
+      <div className="relative z-[2] w-[100vw] h-[14vh] flex flex-row items-center justify-center bg-[#0d0d0d]">
         <div className="w-[81vw] h-[6vh] flex flex-row items-center justify-between outline-2 outline-[rgba(255,255,255,0.17)] rounded-lg px-[4vw]">
           <div className="flex flex-row items-center">
             <img
