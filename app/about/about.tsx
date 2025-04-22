@@ -25,34 +25,17 @@ function About() {
 
   if (!isLoading && isMobile) {
     return (
-      <div className="flex flex-col items-center overflow-y-scroll">
-        <Navbar />
-        <div className="flex flex-col items-center justify-center w-[28vh]">
-          <img
-            src="/about/about_illustration.svg"
-            alt=""
-            className="w-[45vh]"
-          />
+      <>
+        <style>{`
+        body {
+          overflow-y: auto;
+        }
+      `}</style>
+        <div className="flex flex-col items-center w-screen">
+          <Navbar />
+          <img src="/about/about.svg" className="w-[100vw] mt-[7vw]" alt="" />
         </div>
-        <img
-          src="/about/lines.svg"
-          className="absolute top-[21.5vh] w-[100vw]"
-          alt=""
-        />
-        <div className="flex flex-col jusctify-center mt-[11vh]">
-          <h1 className="text-[4vh]">ABOUT THE CLUB</h1>
-          <p className="w-[35vh] text-[1.65vh] mt-[1vh]">
-            Established in <span className="text-[#16e16e]">2016</span>, Tech
-            Syndicate is the technology club of{" "}
-            <span className="text-[#16e16e]">
-              Amity International School, Sector-46, Gurgaon
-            </span>
-            . The club works constantly to encourage students to learn new
-            technologies and keep up with the rapidly progressing sector of{" "}
-            <span className="text-[#16e16e]">computer science</span>.
-          </p>
-        </div>
-      </div>
+      </>
     );
   }
 

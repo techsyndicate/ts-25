@@ -6,5 +6,5 @@ export const metadata: Metadata = {
 };
 
 export default function () {
-  return <About></About>;
+  return <About />;
 }
