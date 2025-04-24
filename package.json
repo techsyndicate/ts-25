@@ -15,7 +15,8 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "next": "15.2.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-spinners": "^0.17.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

@@ -4,19 +4,20 @@ import Navbar from "@/components/Navbar";
 import MemberCard from "@/components/MemberCard";
 import members from "@/data/members.json";
 import { useRouter } from "next/navigation";
+import { PacmanLoader } from "react-spinners";
 
 function Team() {
   const router = useRouter();
   const [isLoading, setIsLoading] = React.useState(true);
-  
+
   React.useEffect(() => {
-    setIsLoading(false)
+    setIsLoading(false);
   }, []);
 
   if (isLoading) {
     return (
-      <div className="h-screen flex items-center justify-center">
-        <div className="animate-pulse">Loading...</div>
+      <div className="flex flex-col w-[100%] h-[100vh] items-center justify-center">
+        <PacmanLoader className="justify-center items-center" color="#16e16e" />
       </div>
     );
   }
@@ -37,7 +38,7 @@ function Team() {
           ALUMNI{" "}
           <img src="/rightArrow.png" className="sm:h-[0.9vw] h-[4vw]"></img>
         </button>
-        <div className="sm:w-[90vw] sm:gap-[6vw] flex sm:flex-row flex-col items-center justify-center sm:flex-wrap mt-[5vh] mb-[8vh] gap-[6vw] sm:wrap-anywhere">
+        <div className="sm:w-[90vw] sm:gap-[6vw] flex sm:flex-row flex-col items-center justify-center sm:flex-wrap mt-[5vh] mb-[10vh] gap-[10vw] sm:wrap-anywhere">
           {members.map((member, index) => (
             <MemberCard
               name={member.name}

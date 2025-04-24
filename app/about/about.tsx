@@ -2,19 +2,20 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import { useIsMobile } from "@/hooks/useIsMobile";
+import { PacmanLoader } from "react-spinners";
 
 function About() {
   const isMobile = useIsMobile();
   const [isLoading, setIsLoading] = React.useState(true);
 
   React.useEffect(() => {
-    setIsLoading(false)
+    setIsLoading(false);
   }, []);
 
   if (isLoading) {
     return (
-      <div className="h-screen flex items-center justify-center">
-        <div className="animate-pulse">Loading...</div>
+      <div className="flex flex-col w-[100%] h-[100vh] items-center justify-center">
+        <PacmanLoader className="justify-center items-center" color="#16e16e" />
       </div>
     );
   }
