@@ -79,7 +79,7 @@ function Events() {
               date="Coming Soon..."
               styles="top-[28.8vw] right-[26.5vw]"
             />
-            <div className="absolute top-[40.8vw] left-[26.5vw] w-[22vw] h-[4.5vw] mb-[2.5vw]"></div>
+            <div className="absolute top-[37.6vw] left-[26.5vw] w-[22vw] h-[4.5vw] mb-[2.5vw]"></div>
           </div>
         </div>
       </>
