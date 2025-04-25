@@ -2,7 +2,7 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import { useIsMobile } from "@/hooks/useIsMobile";
-import { PacmanLoader } from "react-spinners";
+import Loader from "@/components/Loader";
 
 function About() {
   const isMobile = useIsMobile();
@@ -14,9 +14,7 @@ function About() {
 
   if (isLoading) {
     return (
-      <div className="flex flex-col w-[100%] h-[100vh] items-center justify-center">
-        <PacmanLoader className="justify-center items-center" color="#16e16e" />
-      </div>
+      <Loader></Loader>
     );
   }
 

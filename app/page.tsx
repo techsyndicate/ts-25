@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from "react";
 import Navbar from "@/components/Navbar";
 import localFont from "next/font/local";
 import { Outfit } from "next/font/google";
+import Loader from "@/components/Loader";
 import {
   faGithub,
   faInstagram,
@@ -12,7 +13,6 @@ import {
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useIsMobile } from "@/hooks/useIsMobile";
-import { PacmanLoader } from "react-spinners";
 
 const outfitFont = Outfit({
   variable: "--font-outfit",
@@ -103,9 +103,7 @@ export default function Home() {
 
   if (isLoading) {
     return (
-      <div className="flex flex-col w-[100%] h-[100vh] items-center justify-center">
-        <PacmanLoader className="justify-center items-center" color="#16e16e" />
-      </div>
+      <Loader></Loader>
     );
   }
 

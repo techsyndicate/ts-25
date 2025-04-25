@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import AlumniCardGrid from "@/components/AlumniCardGrid";
 import members from "@/data/alumni.json";
 import { useRouter } from "next/navigation";
-import { PacmanLoader } from "react-spinners";
+import Loader from "@/components/Loader";
 
 function Alumni() {
   let x = "";
@@ -28,9 +28,7 @@ function Alumni() {
 
   if (isLoading) {
     return (
-      <div className="flex flex-col w-[100%] h-[100vh] items-center justify-center">
-        <PacmanLoader className="justify-center items-center" color="#16e16e" />
-      </div>
+      <Loader></Loader>
     );
   }
 
