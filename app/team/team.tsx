@@ -11,7 +11,18 @@ function Team() {
   const [isLoading, setIsLoading] = React.useState(true);
 
   React.useEffect(() => {
-    setIsLoading(false);
+    const imageUrls = [...members.map((m) => m.pfp)];
+
+    const loadImage = (src: string) =>
+      new Promise<void>((resolve) => {
+        const img = new Image();
+        img.src = src;
+        img.onload = img.onerror = () => resolve();
+      });
+
+    Promise.all(imageUrls.map(loadImage)).then(() => {
+      setIsLoading(false);
+    });
   }, []);
 
   if (isLoading) {

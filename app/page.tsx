@@ -31,7 +31,27 @@ export default function Home() {
   const [isLoading, setIsLoading] = React.useState(true);
 
   React.useEffect(() => {
-    setIsLoading(false);
+    const imageUrls = [
+      "./home/cinema.svg",
+      "./home/o1.svg",
+      "./home/camera.svg",
+      "./home/cube.svg",
+      "./home/camera2.svg",
+      "./home/cam3.svg",
+      "./home/mobile-man.svg",
+      "./home/man.svg",
+    ];
+
+    const loadImage = (src: string) =>
+      new Promise<void>((resolve) => {
+        const img = new Image();
+        img.src = src;
+        img.onload = img.onerror = () => resolve();
+      });
+
+    Promise.all(imageUrls.map(loadImage)).then(() => {
+      setIsLoading(false);
+    });
   }, []);
 
   useEffect(() => {

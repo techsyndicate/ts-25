@@ -43,7 +43,7 @@ const MemberCard: React.FC<MemberCardProps> = ({
       <h2 className="text-[#fff] sm:text-[2vw] text-[7vw] mt-[1.5vw]">
         {name}
       </h2>
-      <h4 className="sm:text-[#8c8c8c] sm:text-[1.4vw] text-[5vw] sm:group-hover:text-[#16e16e] text-[#16e16e] transition-all duration-300">
+      <h4 className="sm:text-[#8c8c8c] sm:text-[1.4vw] text-[5vw] sm:group-hover:text-[#16e16e] text-[#fff] transition-all duration-300">
         {title}
       </h4>
       <div
