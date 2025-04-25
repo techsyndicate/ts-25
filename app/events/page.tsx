@@ -33,7 +33,8 @@ function Events() {
           <Navbar />
           <h1 className="text-[10vw]">EVENTS</h1>
           <p className="text-[rgba(255,255,255,0.65)] w-[60vw] text-center mt-[3vw]">
-            Check out what’s happening at Tech Syndicate!
+            A timeline showcasing the different events and activities organized
+            by Tech Syndicate over the academic year.
           </p>
           <div className="mt-[10vw] flex flex-col items-center justify-center overflow-scroll">
             <MobileEventCard title="InTech" date="Coming Soon..." link="asdasdasd" />
@@ -61,10 +62,8 @@ function Events() {
           <div className="flex flex-col items-center justify-center">
             <h1 className="text-[3vw] font-light mt-[10vh]">EVENTS</h1>
             <p className="text-[1vw] font-light text-[rgba(255,255,255,0.65)] text-center w-[35vw] mt-[2vh]">
-              I ain't worth it Lucy. Besides you, I got nothing left. But you
-              still have a dream to stick around for. I need ya to see it
-              through. That's my dream. Honestly, nothing else ever really
-              mattered.
+              A timeline showcasing the different events and activities organized
+              by Tech Syndicate over the academic year.
             </p>
           </div>
           <div className="blobs relative mt-[-5vh]">
