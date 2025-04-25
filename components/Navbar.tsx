@@ -39,10 +39,10 @@ function Navbar() {
   if (isMobile) {
     if (isClicked) {
       return (
-        <div className="">
+        <div className="bg-[#0a0a0a] w-screen overflow-hidden">
           <div className="relative z-[3] w-[100vw] h-[14vh] flex flex-row items-center justify-center bg-[#0d0d0d]" />
           <div className="w-[100vw] flex flex-col absolute top-0 bg-[#0d0d0d]">
-            <div className="borderRemove z-[4] borderRemove outline-2 outline-[rgba(255,255,255,0.17)] rounded-lg w-[81vw] ml-[9.5vw] h-[6vh] mt-[4vh] flex flex-row items-center justify-between px-[4vw]">
+            <div className="borderRemove z-[4] outline-2 outline-[rgba(255,255,255,0.17)] rounded-lg w-[81vw] ml-[9.5vw] h-[6vh] mt-[4vh] flex flex-row items-center justify-between px-[4vw]">
               <div className="flex flex-row items-center">
                 <img
                   src="./tsLogo.svg"
@@ -83,7 +83,7 @@ function Navbar() {
       );
     }
     return (
-      <div className="relative z-[2] w-[100vw] h-[14vh] flex flex-row items-center justify-center bg-[#0d0d0d]">
+      <div className="relative z-[2] w-[100vw] h-[14vh] flex flex-row items-center justify-center bg-[#0a0a0a]">
         <div className="w-[81vw] h-[6vh] flex flex-row items-center justify-between outline-2 outline-[rgba(255,255,255,0.17)] rounded-lg px-[4vw]">
           <div className="flex flex-row items-center">
             <img

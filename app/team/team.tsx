@@ -37,7 +37,7 @@ function Team() {
           ALUMNI{" "}
           <img src="/rightArrow.png" className="sm:h-[0.9vw] h-[4vw]"></img>
         </button>
-        <div className="sm:w-[90vw] sm:gap-[6vw] flex sm:flex-row flex-col items-center justify-center sm:flex-wrap mt-[5vh] mb-[8vh] gap-[6vw] sm:wrap-anywhere">
+        <div className="sm:w-[90vw] sm:gap-[6vw] flex sm:flex-row flex-col items-center justify-center sm:flex-wrap mb-[8vh] gap-[6vw] sm:wrap-anywhere">
           {members.map((member, index) => (
             <MemberCard
               name={member.name}
