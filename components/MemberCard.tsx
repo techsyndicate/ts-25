@@ -15,7 +15,7 @@ import {
   faBehance,
   faSoundcloud,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faFlag, faEnvelope, faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 interface MemberCardProps {
   name: string;
@@ -40,7 +40,7 @@ const MemberCard: React.FC<MemberCardProps> = ({
         alt={name}
         className="sm:w-[25vw] w-[70vw] aspect-square object-cover sm:p-[2vw] p-[4vw] sm:rounded-[2.6vw] rounded-[7vw]"
       />
-      <h2 className="text-[#fff] sm:text-[2vw] text-[7vw] mt-[1.5vw]">
+      <h2 className="text-[#fff] sm:text-[2vw] text-[7vw]">
         {name}
       </h2>
       <h4 className="sm:text-[#8c8c8c] sm:text-[1.4vw] text-[5vw] sm:group-hover:text-[#16e16e] text-[#fff] transition-all duration-300">
@@ -88,7 +88,9 @@ const MemberCard: React.FC<MemberCardProps> = ({
               icon.includes("lintr") ||
               icon.includes("linktr.ee")
             ? faGlobe
-            : "";
+            : icon.includes("tryhackme")
+            ? faFlag
+            : faGlobe
           return (
             <a
               href={icon}

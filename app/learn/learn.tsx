@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import ResourceCard from "@/components/ResourceCard";
 import ResourceCardMobile from "@/components/ResourceCardMobile";
 import { useIsMobile } from "@/hooks/useIsMobile";
-import { PacmanLoader } from "react-spinners";
+import Loader from "@/components/Loader";
 
 function ResourcesPage() {
   const isMobile = useIsMobile();
@@ -16,9 +16,7 @@ function ResourcesPage() {
 
   if (isLoading) {
     return (
-      <div className="flex flex-col w-[100%] h-[100vh] items-center justify-center">
-        <PacmanLoader className="justify-center items-center" color="#16e16e" />
-      </div>
+      <Loader></Loader>
     );
   }
 

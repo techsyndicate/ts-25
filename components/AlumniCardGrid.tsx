@@ -32,7 +32,7 @@ const AlumniCardGrid: React.FC<AlumniGridProps> = ({ batch, alumnus = [] }) => {
   return (
     <>
       <div className="w-[69vw] flex flex-col items-center justify-center flex-wrap mt-[5vh] gap-[3vw] wrap-anywhere">
-        <h1 className="sm:text-[3vw] text-[8vw] text-[#16e16e] self-start mt-[2vw]">
+        <h1 className="sm:text-[3vw] text-[8vw] text-[#16e16e] font-semibold self-start mt-[2vw]">
           {batch}
         </h1>
 

@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import MemberCard from "@/components/MemberCard";
 import members from "@/data/members.json";
 import { useRouter } from "next/navigation";
-import { PacmanLoader } from "react-spinners";
+import Loader from "@/components/Loader";
 
 function Team() {
   const router = useRouter();
@@ -27,9 +27,7 @@ function Team() {
 
   if (isLoading) {
     return (
-      <div className="flex flex-col w-[100%] h-[100vh] items-center justify-center">
-        <PacmanLoader className="justify-center items-center" color="#16e16e" />
-      </div>
+      <Loader></Loader>
     );
   }
 
