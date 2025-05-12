@@ -108,7 +108,7 @@ function Navbar() {
   }
 
   return (
-    <div className="my-[1.8vw] flex flex-row items-center justify-center gap-[0.7vw]">
+    <div className="z-[10] my-[1.8vw] flex flex-row items-center justify-center gap-[0.7vw] relative">
       <div
         onClick={() => (router.push('/'))}
         className="border-2 border-[rgba(255,255,255,0.17)] flex flex-row items-center justify-center px-[5vw] py-[0.68vw] rounded-lg gap-[0.5vw] cursor-pointer"

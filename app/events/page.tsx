@@ -34,7 +34,11 @@ function Events() {
             by Tech Syndicate over the academic year.
           </p>
           <div className="mt-[10vw] flex flex-col items-center justify-center overflow-scroll">
-            <MobileEventCard title="InTech" date="May 18 - Jun 5" link="/intech" />
+            <MobileEventCard
+              title="inTech"
+              date="May 18 - Jun 5"
+              link="/intech"
+            />
             <img src="./events/mobile/line2.svg" alt="" />
             <MobileEventCard title="Robotronics" date="Coming Soon..." />
             <div className="w-[100%] h-[12vw]"></div>
@@ -61,7 +65,7 @@ function Events() {
           </div>
           <div className="blobs relative mt-[-5vh]">
             <EventCard
-              title="InTech"
+              title="inTech"
               date="May 18 - Jun 5"
               styles="top-[9vw] left-[26.5vw]"
               link="/intech"
