@@ -206,7 +206,7 @@ function ResourcesPage() {
                 body="Hardware is the part of a computer that is designed to perform a specific task..."
                 bgcolor="bg-[#16181C]"
                 color="text-white w-[65vw]"
-                link="/"
+                link="https://techsyndicate.notion.site/Hardware-1d0295576735804bb6aae2dbe9aaa54d"
                 knowMoreColor="text-[#5793EE] mt-[1.9vw]"
               />
             </div>
@@ -473,7 +473,7 @@ function ResourcesPage() {
           left="left-[54vw]"
           bgcolor="bg-[#16181C]"
           color="text-white w-[14vw] mt-[0vw]"
-          link="/"
+          link="https://techsyndicate.notion.site/Hardware-1d0295576735804bb6aae2dbe9aaa54d"
           knowMoreColor="text-[#5793EE] mt-[1.9vw]"
         ></ResourceCard>
 
