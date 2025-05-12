@@ -1,21 +1,5 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faLinkedin,
-  faSpotify,
-  faTwitter,
-  faInstagram,
-  faFacebook,
-  faYoutube,
-  faReddit,
-  faPinterest,
-  faArtstation,
-  faDribbble,
-  faBehance,
-  faSoundcloud,
-} from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faGlobe } from "@fortawesome/free-solid-svg-icons";
+import Image from 'next/image'
 
 interface AlumniGridProps {
   batch: string;
@@ -43,7 +27,10 @@ const AlumniCardGrid: React.FC<AlumniGridProps> = ({ batch, alumnus = [] }) => {
                 className="sm:w-[19vw] sm:h-[29vw] w-[70vw] h-[100vw] flex flex-col items-center mt-[4vh] bg-[#191919] sm:rounded-[1vw] rounded-[4vw] group relative "
                 key={index}
               >
-                <img
+                <Image
+                  sizes="70vw"
+                  width={0}
+                  height={0}
                   src={member.pfp}
                   alt={member.name}
                   className="sm:w-[25vw] w-[70vw] aspect-square object-cover sm:p-[2vw] p-[4vw] sm:rounded-[2.6vw] rounded-[7vw]"

@@ -5,6 +5,7 @@ import AlumniCardGrid from "@/components/AlumniCardGrid";
 import members from "@/data/alumni.json";
 import { useRouter } from "next/navigation";
 import Loader from "@/components/Loader";
+import Image from 'next/image'
 
 function Alumni() {
   let x = "";
@@ -12,24 +13,11 @@ function Alumni() {
   const [isLoading, setIsLoading] = React.useState(true);
 
   React.useEffect(() => {
-    const imageUrls = [...members.flatMap((m) => m.alumni.map((a) => a.pfp))];
-
-    const loadImage = (src: string) =>
-      new Promise<void>((resolve) => {
-        const img = new Image();
-        img.src = src;
-        img.onload = img.onerror = () => resolve();
-      });
-
-    Promise.all(imageUrls.map(loadImage)).then(() => {
-      setIsLoading(false);
-    });
+    setIsLoading(false)
   }, []);
 
   if (isLoading) {
-    return (
-      <Loader></Loader>
-    );
+    return <Loader></Loader>;
   }
 
   return (
@@ -46,7 +34,14 @@ function Alumni() {
           className="sm:text-[#777] text-[#fff] flex items-center sm:gap-[0.4vw] sm:text-[1.1vw] sm:cursor-pointer text-[5vw] gap-[2vw]"
         >
           MEMBERS{" "}
-          <img src="/rightArrow.png" className="sm:h-[0.9vw] h-[4vw]"></img>
+          <Image
+            src="/rightArrow.png"
+            className="sm:h-[0.9vw] h-[3vw] w-[3.1vw] sm:w-[0.9vw]"
+            width={0}
+            height={0}
+            alt=""
+            sizes="100vw"
+          ></Image>
         </button>
 
         {members.map((member, index) => (

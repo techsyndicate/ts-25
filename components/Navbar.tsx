@@ -111,7 +111,7 @@ function Navbar() {
   return (
     <div className="my-[1.8vw] flex flex-row items-center justify-center gap-[0.7vw]">
       <div
-        onClick={() => (window.location.href = "/")}
+        onClick={() => (router.push('/'))}
         className="border-2 border-[rgba(255,255,255,0.17)] flex flex-row items-center justify-center px-[5vw] py-[0.68vw] rounded-lg gap-[0.5vw] cursor-pointer"
       >
         <img src="./tsLogo.svg" alt="TS Logo" className="size-[1.5vw]" />

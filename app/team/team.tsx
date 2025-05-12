@@ -5,30 +5,18 @@ import MemberCard from "@/components/MemberCard";
 import members from "@/data/members.json";
 import { useRouter } from "next/navigation";
 import Loader from "@/components/Loader";
+import Image from 'next/image'
 
 function Team() {
   const router = useRouter();
   const [isLoading, setIsLoading] = React.useState(true);
 
   React.useEffect(() => {
-    const imageUrls = [...members.map((m) => m.pfp)];
-
-    const loadImage = (src: string) =>
-      new Promise<void>((resolve) => {
-        const img = new Image();
-        img.src = src;
-        img.onload = img.onerror = () => resolve();
-      });
-
-    Promise.all(imageUrls.map(loadImage)).then(() => {
-      setIsLoading(false);
-    });
+    setIsLoading(false);
   }, []);
 
   if (isLoading) {
-    return (
-      <Loader></Loader>
-    );
+    return <Loader></Loader>;
   }
 
   return (
@@ -45,7 +33,7 @@ function Team() {
           className="sm:text-[#777] text-[#fff] flex items-center sm:gap-[0.4vw] sm:text-[1.1vw] sm:cursor-pointer text-[5vw] gap-[2vw]"
         >
           ALUMNI{" "}
-          <img src="/rightArrow.png" className="sm:h-[0.9vw] h-[4vw]"></img>
+          <Image src="/rightArrow.png" className="sm:h-[0.9vw] h-[3vw] w-[3.2vw] sm:w-[0.9vw]" alt="" sizes="100vw" height={0} width={0}></Image>
         </button>
         <div className="sm:w-[90vw] sm:gap-[6vw] flex sm:flex-row flex-col items-center justify-center sm:flex-wrap mt-[5vh] mb-[10vh] gap-[10vw] sm:wrap-anywhere">
           {members.map((member, index) => (
