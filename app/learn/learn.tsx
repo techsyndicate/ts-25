@@ -22,7 +22,7 @@ function ResourcesPage() {
 
   if (!isLoading && isMobile) {
     return (
-      <div className="w-[100vw] h-[100vh] overflow-scroll">
+      <div className="w-[100vw] h-[100vh] overflow-scroll bg-[#000]">
         <Navbar />
         <div className="w-[100%] h-[100%] flex flex-col items-center ">
           <h1 className="text-[7vw] text-center font-light">

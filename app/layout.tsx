@@ -24,7 +24,7 @@ export default function RootLayout({
         <link rel="icon" href="/tsLogo.png" type="image/png" sizes="any"></link>
       </head>
       <body
-        className={`${outfitFont.variable} ${outfitFont.className} bg-[#0D0D0D] antialiased m-0 overflow-hidden`}
+        className={`${outfitFont.variable} ${outfitFont.className} bg-[#000] antialiased m-0 overflow-hidden`}
       >
         {children}
       </body>
