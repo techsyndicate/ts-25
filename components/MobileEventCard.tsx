@@ -18,13 +18,14 @@ function MobileEventCard(props: EventCardProps) {
       )}
       {props.link && (
         <button
-          className="bg-[rgba(255,255,255,0.6)] text-black outline-none border-none rounded-md cursor-pointer px-[4vw] py-[1.5vw] mt-[2.25vw]"
-          // style={{
-          //   boxShadow:
-          //     "0 14px 28px rgba(22,225,110,0.25), 0 5px 10px rgba(22,225,110,0.22)",
-          // }}
+          onClick={() => window.open(props.link || 'https://techsyndicate.us', '_blank')}
+          className="bg-[rgb(22,225,110)] text-black outline-none border-none rounded-md cursor-pointer px-[4vw] py-[1.5vw] mt-[2.25vw]"
+          style={{
+            boxShadow:
+              "0 14px 28px rgba(22,225,110,0.25), 0 5px 10px rgba(22,225,110,0.22)",
+          }}
         >
-          Soon
+          Join
         </button>
       )}
     </div>

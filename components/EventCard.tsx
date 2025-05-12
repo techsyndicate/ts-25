@@ -22,13 +22,14 @@ function EventCard(props: EventCardProps) {
       )}
       {props.link && (
         <button
-          className="bg-[rgba(255,255,255,0.6)] text-[1.4vw] text-black outline-none border-none rounded-md cursor-pointer px-[2.5vw] py-[1vh] mt-[2vh]"
-          // style={{
-          //   boxShadow:
-          //     "0 14px 28px rgba(22,225,110,0.25), 0 5px 10px rgba(22,225,110,0.22)",
-          // }}
+          className="bg-[rgb(22,225,110)] text-[1.4vw] text-black outline-none border-none rounded-md cursor-pointer px-[2.5vw] py-[1vh] mt-[2vh]"
+          style={{
+            boxShadow:
+              "0 14px 28px rgba(22,225,110,0.25), 0 5px 10px rgba(22,225,110,0.22)",
+          }}
+          onClick={() => {window.open(props.link || 'https://techsyndicate.us', '_blank')}}
         >
-          Soon
+          Join
         </button>
       )}
     </div>
