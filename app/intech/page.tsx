@@ -84,7 +84,7 @@ function IntechPage() {
         src="/icons/intech_banner.png"
         width={0}
         height={0}
-        className="w-[100vw] h-[auto] transform-[scale(1.2)] fixed bottom-[-2vw] left-0"
+        className="w-[100vw] h-[auto] transform-[scale(1.2)] fixed bottom-[-2vw] left-0 z-[-1]"
         sizes="100vw"
       ></Image>
     </div>
