@@ -33,9 +33,7 @@ const MemberCard: React.FC<MemberCardProps> = ({
 }) => {
   let platform = "";
   return (
-    // <div className="w-[20vw] h-[27vw] flex flex-col items-center mt-[4vh] bg-[#191919] rounded-[1vw] group relative hover:h-[30vw] transition-all duration-300">
     <div className="sm:w-[19vw] sm:h-[27vw] w-[70vw] h-[100vw] flex flex-col items-center mt-[4vh] bg-[#191919] sm:rounded-[1vw] rounded-[4vw] group relative hover:scale-102 transition-all duration-300">
-      {/* // <div className="sm:w-[19vw] sm:h-[27vw] w-[70vw] h-[100vw] flex flex-col items-center mt-[4vh] bg-[#191919] sm:rounded-[1vw] rounded-[4vw] group relative"> */}
       <Image
         src={image}
         alt={name}
@@ -104,7 +102,6 @@ const MemberCard: React.FC<MemberCardProps> = ({
               className="text-[#fff] hover:text-[#16e16e] transition-all duration-300 items-center m-0 pt-0.5"
             >
               <FontAwesomeIcon
-                //@ts-ignore
                 icon={iconDefinition}
                 className="sm:text-[1.5vw] text-[6vw] align-middle self-center"
               />

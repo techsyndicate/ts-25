@@ -2,23 +2,11 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import { useIsMobile } from "@/hooks/useIsMobile";
-import Loader from "@/components/Loader";
 
 function About() {
   const isMobile = useIsMobile();
-  const [isLoading, setIsLoading] = React.useState(true);
 
-  React.useEffect(() => {
-    setIsLoading(false);
-  }, []);
-
-  if (isLoading) {
-    return (
-      <Loader></Loader>
-    );
-  }
-
-  if (!isLoading && isMobile) {
+  if (isMobile) {
     return (
       <>
         <style>{`

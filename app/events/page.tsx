@@ -4,19 +4,9 @@ import Navbar from "@/components/Navbar";
 import { useIsMobile } from "@/hooks/useIsMobile";
 import React from "react";
 import MobileEventCard from "@/components/MobileEventCard";
-import Loader from "@/components/Loader";
 
 function Events() {
   const isMobile = useIsMobile();
-  const [isLoading, setIsLoading] = React.useState(true);
-
-  React.useEffect(() => {
-    setIsLoading(false);
-  }, []);
-
-  if (isLoading) {
-    return <Loader></Loader>;
-  }
 
   if (isMobile) {
     return (
@@ -39,7 +29,7 @@ function Events() {
               date="May 18 - Jun 5"
               link="/intech"
             />
-            <img src="./events/mobile/line2.svg" alt="" />
+            <img src="/events/mobile/line2.svg" alt="" />
             <MobileEventCard title="Robotronics" date="Coming Soon..." />
             <div className="w-[100%] h-[12vw]"></div>
           </div>
@@ -72,7 +62,7 @@ function Events() {
             />
             <img
               className="absolute top-[14.625vw] w-[17.3vw] left-[48.5vw]"
-              src="./events/line1.svg"
+              src="/events/line1.svg"
               alt=""
             />
             <EventCard

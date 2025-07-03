@@ -4,23 +4,11 @@ import Navbar from "@/components/Navbar";
 import ResourceCard from "@/components/ResourceCard";
 import ResourceCardMobile from "@/components/ResourceCardMobile";
 import { useIsMobile } from "@/hooks/useIsMobile";
-import Loader from "@/components/Loader";
 
 function ResourcesPage() {
   const isMobile = useIsMobile();
-  const [isLoading, setIsLoading] = React.useState(true);
 
-  React.useEffect(() => {
-    setIsLoading(false);
-  }, []);
-
-  if (isLoading) {
-    return (
-      <Loader></Loader>
-    );
-  }
-
-  if (!isLoading && isMobile) {
+  if (isMobile) {
     return (
       <div className="w-[100vw] h-[100vh] overflow-scroll bg-[#000]">
         <Navbar />
