@@ -24,47 +24,23 @@ interface MemberCardProps {
   image: string;
   socialIcons?: string[];
 }
-const getIconForUrl = (url: string) => {
-  if (url.includes("github")) return faGithub;
-  if (url.includes("linkedin")) return faLinkedin;
-  if (url.includes("spotify")) return faSpotify;
-  if (url.includes("twitter") || url.includes("//x.com")) return faTwitter;
-  if (url.includes("instagram")) return faInstagram;
-  if (url.includes("facebook")) return faFacebook;
-  if (url.includes("youtube")) return faYoutube;
-  if (url.includes("reddit")) return faReddit;
-  if (url.includes("pinterest")) return faPinterest;
-  if (url.includes("mailto")) return faEnvelope;
-  if (url.includes("artstation") || url.includes("bento")) return faArtstation;
-  if (url.includes("dribbble")) return faDribbble;
-  if (url.includes("behance")) return faBehance;
-  if (url.includes("soundcloud")) return faSoundcloud;
-  if (url.includes("tryhackme")) return faFlag;
-  if (url.includes("anirudhchaturvedi.me") || 
-      url.includes("aayushgarg.net") || 
-      url.includes("vercel") || 
-      url.includes("linktree") || 
-      url.includes("lintr") || 
-      url.includes("linktr.ee")) return faGlobe;
-  return faGlobe;
-};
 
-const MemberCard: React.FC<MemberCardProps> = React.memo(({
+const MemberCard: React.FC<MemberCardProps> = ({
   name,
   title,
   image,
   socialIcons = [],
 }) => {
+  let platform = "";
   return (
     <div className="sm:w-[19vw] sm:h-[27vw] w-[70vw] h-[100vw] flex flex-col items-center mt-[4vh] bg-[#191919] sm:rounded-[1vw] rounded-[4vw] group relative hover:scale-102 transition-all duration-300">
       <Image
         src={image}
         alt={name}
-        className="sm:w-[25vw] w-[70vw] aspect-square object-cover sm:p-[2vw] p-[4vw] sm:rounded-[2.6vw] rounded-[7vw] bg-[#2a2a2a]"
-        sizes="(max-width: 768px) 70vw, 25vw"
-        width={300}
-        height={300}
-        loading="lazy"
+        className="sm:w-[25vw] w-[70vw] aspect-square object-cover sm:p-[2vw] p-[4vw] sm:rounded-[2.6vw] rounded-[7vw]"
+        sizes="100vw"
+        width={0}
+        height={0}
       />
       <h2 className="text-[#fff] sm:text-[2vw] text-[7vw]">
         {name}
@@ -77,7 +53,46 @@ const MemberCard: React.FC<MemberCardProps> = React.memo(({
         className="flex flex-row justify-center items-center bg-[#393939] rounded-[4vw] gap-[4vw] mt-[5vw] p-[4vw] px-[7vw] sm:opacity-0 sm:group-hover:opacity-100 sm:transition-opacity sm:duration-300 sm:rounded-[1vw] sm:gap-[1.4vw] sm:mt-[1.6vw] sm:p-[1vw] sm:px-[2.4vw]"
       >
         {socialIcons.map((icon, index) => {
-          const iconDefinition = getIconForUrl(icon);
+          const iconDefinition = icon.includes("github")
+            ? faGithub
+            : icon.includes("linkedin")
+            ? faLinkedin
+            : icon.includes("spotify")
+            ? faSpotify
+            : icon.includes("twitter") || icon.includes("//x.com")
+            ? faTwitter
+            : icon.includes("instagram")
+            ? faInstagram
+            : icon.includes("facebook")
+            ? faFacebook
+            : icon.includes("youtube")
+            ? faYoutube
+            : icon.includes("reddit")
+            ? faReddit
+            : icon.includes("pinterest")
+            ? faPinterest
+            : icon.includes("mailto")
+            ? faEnvelope
+            : icon.includes("artstation")
+            ? faArtstation
+            : icon.includes("bento")
+            ? faArtstation
+            : icon.includes("dribbble")
+            ? faDribbble
+            : icon.includes("behance")
+            ? faBehance
+            : icon.includes("soundcloude")
+            ? faSoundcloud
+            : icon.includes("anirudhchaturvedi.me") ||
+              icon.includes("aayushgarg.net") ||
+              icon.includes("vercel") ||
+              icon.includes("linktree") ||
+              icon.includes("lintr") ||
+              icon.includes("linktr.ee")
+            ? faGlobe
+            : icon.includes("tryhackme")
+            ? faFlag
+            : faGlobe
           return (
             <a
               href={icon}
@@ -96,8 +111,6 @@ const MemberCard: React.FC<MemberCardProps> = React.memo(({
       </div>
     </div>
   );
-});
-
-MemberCard.displayName = 'MemberCard';
+};
 
 export default MemberCard;
