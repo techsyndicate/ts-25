@@ -111,6 +111,7 @@ export default function Home() {
             alt=""
             sizes="24vw"
             width={0} height={0}
+            quality={100}
           />
           <Image
             src="/home/o1.webp"
@@ -118,6 +119,7 @@ export default function Home() {
             alt=""
             sizes="28vw"
             width={0} height={0}
+            quality={100}
           />
           <Image
             src="/home/camera.webp"
@@ -125,6 +127,7 @@ export default function Home() {
             alt=""
             sizes="34vw"
             width={0} height={0}
+            quality={100}
           />
           <Image
             src="/home/cube.webp"
@@ -132,6 +135,7 @@ export default function Home() {
             alt=""
             sizes="30vw"
             width={0} height={0}
+            quality={100}
           />
           <Image
             src="/home/camera2.webp"
@@ -139,6 +143,7 @@ export default function Home() {
             alt=""
             sizes="40vw"
             width={0} height={0}
+            quality={100}
           />
           <Image
             src="/home/cam3.webp"
@@ -146,6 +151,7 @@ export default function Home() {
             alt=""
             sizes="30vw"
             width={0} height={0}
+            quality={100}
           />
         </div>
         <div className="relative h-[100vw]">
@@ -213,6 +219,7 @@ export default function Home() {
             alt=""
             sizes="100vw"
             width={0} height={0}
+            quality={100}
           />
         </div>
       </div>
@@ -255,6 +262,7 @@ export default function Home() {
             alt=""
             sizes="13vw"
             width={0} height={0}
+            quality={100}
           />
           <Image
             src="/home/o1.webp"
@@ -262,6 +270,7 @@ export default function Home() {
             alt=""
             sizes="13vw"
             width={0} height={0}
+            quality={100}
           />
           <Image
               src="/home/camera.webp"
@@ -269,6 +278,7 @@ export default function Home() {
             alt=""
             sizes="15vw"
             width={0} height={0}
+            quality={100}
           />
           <div className="absolute bottom-[5vh] right-[16.1vw] flex flex-row gap-[1vw]">
             <a
@@ -334,6 +344,7 @@ export default function Home() {
           sizes="30vw"
           alt=""
           width={0} height={0}
+          quality={100}
         />
         <Image
           src="/home/cube.webp"
@@ -341,6 +352,7 @@ export default function Home() {
           alt=""
           sizes="14.4vw"
           width={0} height={0}
+          quality={100}
         />
         <Image
           src="/home/cam3.webp"
@@ -348,6 +360,7 @@ export default function Home() {
           alt=""
           sizes="19.3vw"
           width={0} height={0}
+          quality={100}
         />
         <Image
           src="/home/man.webp"
@@ -355,6 +368,7 @@ export default function Home() {
           alt=""
           sizes="35vw"
           width={0} height={0}
+          quality={100}
         />
         <div className="w-[20vw] absolute left-[39.5vw] z-[-100] aspect-square bg-[#16e16e] blur-[200px]" />
       </div>
