@@ -2,23 +2,28 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import AlumniCardGrid from "@/components/AlumniCardGrid";
-import members from "@/data/alumni.json";
 import { useRouter } from "next/navigation";
-import Loader from "@/components/Loader";
 import Image from 'next/image'
 
-function Alumni() {
-  let x = "";
+interface AlumniMember {
+  name: string;
+  exrole: string;
+  pfp: string;
+  batch: string;
+  status: string;
+}
+
+interface AlumniBatch {
+  batch: string;
+  alumni: AlumniMember[];
+}
+
+interface AlumniProps {
+  members: AlumniBatch[];
+}
+
+function Alumni({ members }: AlumniProps) {
   const router = useRouter();
-  const [isLoading, setIsLoading] = React.useState(true);
-
-  React.useEffect(() => {
-    setIsLoading(false)
-  }, []);
-
-  if (isLoading) {
-    return <Loader></Loader>;
-  }
 
   return (
     <div className="overflow-y-auto no-scrollbar h-screen w-screen">

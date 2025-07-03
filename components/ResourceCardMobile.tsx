@@ -3,6 +3,7 @@ import React from "react";
 import { useRouter } from "next/navigation";
 import { ResourceLimits } from "worker_threads";
 import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
+import Image from 'next/image';
 
 function knowMoreButton(
   l: string | undefined,
@@ -32,10 +33,14 @@ function cardBanner(banner: string | undefined, width: string) {
     return (
       <>
         <div className={`${width} h-[6vw]`}></div>
-        <img
-          src={`${banner}`}
-          className={`rounded-tr-[0.8vw] rounded-tl-[0.8vw] ${width} absolute top-0 left-0`}
-        ></img>
+        <Image
+          src={banner}
+          alt="Resource banner"
+          width={0}
+          height={0}
+          sizes="80vw"
+          className={`rounded-tr-[0.8vw] rounded-tl-[0.8vw] ${width} absolute top-0 left-0 h-[6vw] object-cover`}
+        />
       </>
     );
   } else {

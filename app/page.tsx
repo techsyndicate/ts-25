@@ -3,7 +3,6 @@ import React, { useEffect, useRef } from "react";
 import Navbar from "@/components/Navbar";
 import localFont from "next/font/local";
 import { Outfit } from "next/font/google";
-import Loader from "@/components/Loader";
 import Image from 'next/image';
 import {
   faGithub,
@@ -29,11 +28,6 @@ export default function Home() {
   const targetMousePosition = useRef({ x: 0, y: 0 });
   const animationFrameId = useRef<number | null>(null);
   const isMobile = useIsMobile();
-  const [isLoading, setIsLoading] = React.useState(true);
-
-  React.useEffect(() => {
-    setIsLoading(false)
-  }, []);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -82,12 +76,6 @@ export default function Home() {
     };
   }, []);
 
-  if (isLoading) {
-    return (
-      <Loader></Loader>
-    );
-  }
-
   if (isMobile) {
     return (
       <div className="relative h-[100vh] overflow-x-hidden">
@@ -118,42 +106,42 @@ export default function Home() {
             SYNDICATE
           </h1>
           <Image
-            src="./home/cinema.svg"
+            src="/home/cinema.svg"
             className="absolute top-[19vw] left-0 w-[24vw]"
             alt=""
             sizes="24vw"
             width={0} height={0}
           />
           <Image
-            src="./home/o1.svg"
+            src="/home/o1.svg"
             className="absolute top-[12vw] w-[28vw] right-[-3vw]"
             alt=""
             sizes="28vw"
             width={0} height={0}
           />
           <Image
-            src="./home/camera.svg"
+            src="/home/camera.svg"
             className="absolute bottom-[25.9vw] left-[12vw] z-[-10] w-[34vw]"
             alt=""
             sizes="34vw"
             width={0} height={0}
           />
           <Image
-            src="./home/cube.svg"
+            src="/home/cube.svg"
             className="absolute bottom-[19.4vw] right-[7vw] z-[-10] w-[30vw]"
             alt=""
             sizes="30vw"
             width={0} height={0}
           />
           <Image
-            src="./home/camera2.svg"
+            src="/home/camera2.svg"
             className="absolute bottom-[-10vw] left-[0vw] w-[40vw]"
             alt=""
             sizes="40vw"
             width={0} height={0}
           />
           <Image
-            src="./home/cam3.svg"
+            src="/home/cam3.svg"
             className="absolute bottom-[-10vw] z-[100] right-[0vw] w-[30vw]"
             alt=""
             sizes="30vw"
@@ -220,7 +208,7 @@ export default function Home() {
             </a>
           </div>
           <Image
-            src="./home/mobile-man.svg"
+            src="/home/mobile-man.svg"
             className="absolute w-[100vw] bottom-[-7vw]"
             alt=""
             sizes="100vw"
@@ -262,21 +250,21 @@ export default function Home() {
             SYNDICATE
           </h1>
           <Image
-            src="./home/cinema.svg"
+            src="/home/cinema.svg"
             className="absolute top-[-4vh] left-[16vw] w-[13vw] parallax"
             alt=""
             sizes="13vw"
             width={0} height={0}
           />
           <Image
-            src="./home/o1.svg"
+            src="/home/o1.svg"
             className="absolute top-[-1vh] w-[13vw] right-[22vw] parallax"
             alt=""
             sizes="13vw"
             width={0} height={0}
           />
           <Image
-            src="./home/camera.svg"
+            src="/home/camera.svg"
             className="absolute bottom-[-2vh] left-[26vw] z-[-10] w-[15vw] parallax parallax-slow"
             alt=""
             sizes="15vw"
@@ -341,28 +329,28 @@ export default function Home() {
           </div>
         </div>
         <Image
-          src="./home/camera2.svg"
+          src="/home/camera2.svg"
           className="w-[30vw] absolute bottom-0 left-[9vw] parallax parallax-fast"
           sizes="30vw"
           alt=""
           width={0} height={0}
         />
         <Image
-          src="./home/cube.svg"
+          src="/home/cube.svg"
           className="absolute top-[35vh] right-[27vw] w-[14.4vw] parallax parallax-slow"
           alt=""
           sizes="14.4vw"
           width={0} height={0}
         />
         <Image
-          src="./home/cam3.svg"
+          src="/home/cam3.svg"
           className="absolute bottom-0 right-[15vw] w-[19.3vw] parallax parallax-fast"
           alt=""
           sizes="19.3vw"
           width={0} height={0}
         />
         <Image
-          src="./home/man.svg"
+          src="/home/man.svg"
           className="absolute bottom-[-2vh] left-[33vw] w-[35vw]"
           alt=""
           sizes="35vw"
