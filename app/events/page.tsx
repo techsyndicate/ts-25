@@ -44,7 +44,7 @@ function Events() {
           overflow-y: auto;
         }
       `}</style>
-        <div className=" h-max">
+        <div className="overflow-y-auto no-scrollbar h-screen w-screen">
           <Navbar />
           <div className="flex flex-col items-center justify-center">
             <h1 className="text-[3vw] font-light mt-[10vh]">EVENTS</h1>

@@ -23,9 +23,11 @@ function About() {
   }
 
   return (
-    <div className="flex flex-row items-center justify-center">
-      <div className="w-[80vw] h-screen border-r border-l border-[#565656] flex flex-col items-center justify-between pt-[0.1vw]">
-        <Navbar />
+    <div className="flex flex-row items-center justify-center h-screen w-screen overflow-hidden">
+      <div className="w-[80vw] h-screen border-r border-l border-[#565656] flex flex-col items-center justify-between">
+        <div>
+          <Navbar />
+        </div>
         <div className="w-[100vw] h-[75vh] border-t border-b border-[#565656] flex flex-row mb-[4.5vw]">
           <div className="border-r border-[#565656] w-[55%] h-[100%] flex flex-col">
             <div className="w-[100%] h-[75%] border-b border-[#565656] flex flex-col items-start justify-end p-[1.2vw]">
