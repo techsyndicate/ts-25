@@ -8,17 +8,10 @@ function About() {
 
   if (isMobile) {
     return (
-      <>
-        <style>{`
-        body {
-          overflow-y: auto;
-        }
-      `}</style>
-        <div className="flex flex-col items-center w-screen">
-          <Navbar />
-          <img src="/about/about.svg" className="w-[100vw] mt-[7vw]" alt="" />
-        </div>
-      </>
+      <div className="flex flex-col items-center w-full h-screen overflow-y-auto">
+        <Navbar />
+        <img src="/about/about.svg" className="w-full mt-[7vw]" alt="" />
+      </div>
     );
   }
 

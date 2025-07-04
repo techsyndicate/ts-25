@@ -1,11 +1,11 @@
 import { useEffect, useState, useCallback } from "react";
 
 export const useIsMobile = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState<boolean | null>(null);
 
   const checkIsMobile = useCallback(() => {
     const mobile = window.innerWidth < 768;
-    setIsMobile(prev => prev !== mobile ? mobile : prev);
+    setIsMobile(mobile);
   }, []);
 
   useEffect(() => {

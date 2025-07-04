@@ -30,6 +30,12 @@ export default function Home() {
   const isMobile = useIsMobile();
 
   useEffect(() => {
+    if (isMobile) {
+      if (animationFrameId.current) {
+        cancelAnimationFrame(animationFrameId.current);
+      }
+      return;
+    }
     const handleMouseMove = (e: MouseEvent) => {
       const centerX = window.innerWidth / 2;
       const centerY = window.innerHeight / 2;
@@ -74,11 +80,15 @@ export default function Home() {
         cancelAnimationFrame(animationFrameId.current);
       }
     };
-  }, []);
+  }, [isMobile]);
+
+  if (isMobile === null) {
+    return null;
+  }
 
   if (isMobile) {
     return (
-      <div className="relative h-[100vh] overflow-x-hidden">
+      <div className="relative h-screen overflow-hidden">
         <Navbar />
         <div className="relative mb-[10vw] z-[1]">
             <h1
@@ -115,7 +125,7 @@ export default function Home() {
             />
             <Image
               src="/home/o1.webp"
-              className="absolute top-[12vw] w-[28vw] right-[-3vw]"
+              className="absolute top-[12vw] w-[28vw] right-0"
               alt=""
               sizes="28vw"
               width={0} height={0}
