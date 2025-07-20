@@ -186,7 +186,7 @@ const Navbar = React.memo(() => {
                 : "text-[rgba(255,255,255,0.35)]"
             }`}
           >
-            Robo
+            Robotronics
           </NavLink>
         </div>
       </div>
