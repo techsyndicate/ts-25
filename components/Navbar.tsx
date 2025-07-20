@@ -19,6 +19,8 @@ const getPageName = (pathname: string): string => {
       return "Events";
     case "/alumni":
       return "Alumni";
+    case "/robotronics":
+      return "Robotronics";
     default:
       return "404";
   }
@@ -86,6 +88,9 @@ const Navbar = React.memo(() => {
               </NavLink>
               <NavLink href="/events" className="text-[rgba(255,255,255,0.35)]">
                 Events
+              </NavLink>
+              <NavLink href="/robotronics" className="text-[rgba(255,255,255,0.35)]">
+                Robotronics
               </NavLink>
             </div>
           </div>
@@ -172,6 +177,16 @@ const Navbar = React.memo(() => {
             }`}
           >
             Events
+          </NavLink>
+          <NavLink
+            href="/robotronics"
+            className={`cursor-pointer hover:text-[#fff] transition-all duration-300 ${
+              pathname === "/robotronics"
+                ? "text-[#ffffff]"
+                : "text-[rgba(255,255,255,0.35)]"
+            }`}
+          >
+            Robo
           </NavLink>
         </div>
       </div>

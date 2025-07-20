@@ -13,7 +13,7 @@ function EventCard(props: EventCardProps) {
       className={`absolute w-[22vw] rounded-lg bg-[#191919] ${props.styles} py-[1.875vw] pl-[1.875vw]`}
     >
       <h1 className="text-[1.7vw] font-medium">{props.title}</h1>
-      {props.date === "Coming Soon..." ? (
+      {props.date === "May 18 - Jun 5" ? (
         <p className="text-[1.4vw] text-[rgba(255,255,255,0.6)]">
           {props.date}
         </p>

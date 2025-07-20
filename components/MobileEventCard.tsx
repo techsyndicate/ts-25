@@ -11,7 +11,7 @@ function MobileEventCard(props: EventCardProps) {
   return (
     <div className="w-[60vw] h-[32.4vw] bg-[#191919] p-[3.5vw] rounded-lg">
       <h1 className="text-[5.5vw] font-medium">{props.title}</h1>
-      {props.date === "Coming Soon..." ? (
+      {props.date === "May 18 - Jun 5" ? (
         <p className="text-[rgba(255,255,255,0.6)]">{props.date}</p>
       ) : (
         <p className="text-[#16e16e]">{props.date}</p>
