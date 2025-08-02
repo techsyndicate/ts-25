@@ -71,7 +71,7 @@ function IntechPage() {
           <p className="w-[75vw] sm:w-[45vw] text-center mt-[8vw] sm:mt-[2vw] text-[4vw] md:text-[1vw]">
             Robotronics '25, is the thirteenth edition of our annual inter-school tech fest
             will take place from{" "}
-            <span className="text-[#16e16e]">August 8, 2025 to August 20, 2025</span>. This year it
+            <span className="text-[#16e16e]">August 8, 2025 to August 19, 2025</span>. This year it
             shall comprise of <span className="text-[#16e16e]">16 events</span>{" "}
             across different domains in the field of technology. There will be one
             school crowned as {" "}
