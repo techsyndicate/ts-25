@@ -46,7 +46,7 @@ function Events() {
               />
               <EventCard
                 title="Robotronics"
-                date="Aug 8 - Aug 20"
+                date="Aug 8 - Aug 19"
                 styles="top-[28.8vw] right-[26.5vw]"
                 link='/robotronics'
               />
