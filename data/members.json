@@ -76,26 +76,6 @@
     ]
   },
   {
-    "name": "Ishani Verma",
-    "role": "Member",
-    "pfp": "/pics/ishani_verma.webp",
-    "socials": [
-      "https://www.artstation.com/ishani-verma",
-      "https://www.behance.net/ishaniverma2",
-      "https://open.spotify.com/user/31us5yeuebkhnvd2qs2imz725qri?si=aa440907ccf5443c",
-      "mailto:ishani12verma@gmail.com"
-    ]
-  },
-  {
-    "name": "Udayan Chowdhary",
-    "pfp": "/pics/udayan_chowdhary.webp",
-    "role": "Member",
-    "socials": [
-      "https://www.instagram.com/udayan_chowdhary/",
-      "mailto:udayan.chowdhary08@gmail.com"
-    ]
-  },
-  {
     "name": "Naitik Agarwal",
     "pfp": "/pics/naitik_agarwal.webp",
     "role": "Member",
@@ -103,6 +83,17 @@
       "https://open.spotify.com/user/zsrce5b46sjn303d0yf6344lx?si=1c9332cae03546c6",
       "https://www.instagram.com/naitik_ag.30?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
       "https://www.youtube.com/channel/UC9zIC1A9UhqacFoV1lLlzVg"
+    ]
+  },
+  
+  {
+    "name": "Ayush Sharma",
+    "pfp": "/pics/ayush_sharma.webp",
+    "role": "Member",
+    "socials": [
+      "https://open.spotify.com/user/31toavg24xcf7rmgo75ndkbtoc5e?si=c7effeb6c2cd48f2",
+      "https://www.youtube.com/channel/UChaVOHxqv3ksFn4Bjwb3w8w",
+      "https://www.instagram.com/obv.ayu3hh/"
     ]
   },
   {
@@ -132,16 +123,6 @@
     "socials": [
       "https://open.spotify.com/user/8hp997t0s5bghesrn6ncjm2c6?si=mfZFMLrHRmSlwIs6fVpbpA",
       "mailto:avisha.garg28@gmail.com"
-    ]
-  },
-  {
-    "name": "Ayush Sharma",
-    "pfp": "/pics/ayush_sharma.webp",
-    "role": "Member",
-    "socials": [
-      "https://open.spotify.com/user/31toavg24xcf7rmgo75ndkbtoc5e?si=c7effeb6c2cd48f2",
-      "https://www.youtube.com/channel/UChaVOHxqv3ksFn4Bjwb3w8w",
-      "https://www.instagram.com/obv.ayu3hh/"
     ]
   },
   {
@@ -273,6 +254,15 @@
       "mailto:gandhi.dhairya2009@gmail.com",
       "https://www.instagram.com/dhairya.gandhi_/",
       "https://open.spotify.com/user/31tox5adbhwq4qs25o4koptvdt6u?si=e8935fc53d564238"
+    ]
+  },
+  {
+    "name": "Chirayu Kataria",
+    "pfp": "/pics/chirayu_kataria.webp",
+    "role": "Member",
+    "socials": [
+      "mailto:kchirayuk2@gmail.com",
+      "https://www.instagram.com/chiiii__100/",
     ]
   }
 ]
