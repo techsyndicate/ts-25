@@ -1,5 +1,45 @@
 [
   {
+    "batch": "2025-2026",
+    "alumni": [
+      {
+        "name": "Swastik Seth",
+        "exrole": "Secretary",
+        "pfp": "/pics/swastik_seth.webp",
+        "batch": "2025-2026",
+        "status": "Outgoing Batch"
+      },
+      {
+        "name": "Pakhi Bisht",
+        "exrole": "Core",
+        "pfp": "/pics/pakhi_bisht.webp",
+        "batch": "2025-2026",
+        "status": "Outgoing Batch"
+      },
+      {
+        "name": "Akshar Yadav",
+        "exrole": "Member",
+        "pfp": "/pics/akshar_yadav.webp",
+        "batch": "2025-2026",
+        "status": "Outgoing Batch"
+      },
+      {
+        "name": "Diya Kerur",
+        "exrole": "Member",
+        "pfp": "/pics/diya_kerur.webp",
+        "batch": "2025-2026",
+        "status": "Outgoing Batch"
+      },
+      {
+        "name": "Aryaman Yadav",
+        "exrole": "Member",
+        "pfp": "/pics/aryaman_yadav.webp",
+        "batch": "2025-2026",
+        "status": "Outgoing Batch"
+      }
+    ]
+  },
+  {
     "batch": "2024-2025",
     "alumni": [
       {
@@ -7,49 +47,49 @@
         "exrole": "President",
         "pfp": "/pics/yuvraj_mehta.webp",
         "batch": "2024-2025",
-        "status": "Outgoing Batch"
+        "status": "Student at University of Maryland"
       },
       {
         "name": "Nishant Navani",
         "exrole": "Vice President",
         "pfp": "/pics/nishant_navani.webp",
         "batch": "2024-2025",
-        "status": "Outgoing Batch"
+        "status": "Student at SRCC"
       },
       {
         "name": "Amogh Agrawal",
         "exrole": "Secretary",
         "pfp": "/pics/amogh_agrawal.webp",
         "batch": "2024-2025",
-        "status": "Outgoing Batch"
+        "status": "Student at MIT, Manipal"
       },
       {
         "name": "Aarth Shah",
         "exrole": "Joint Secretary",
         "pfp": "/pics/aarth_shah.webp",
         "batch": "2024-2025",
-        "status": "Outgoing Batch"
+        "status": "Student at BITS Goa"
       },
       {
         "name": "Uday Modi",
         "pfp": "/pics/uday_modi.webp",
         "exrole": "Member",
         "batch": "2024-2025",
-        "status": "Outgoing Batch"
+        "status": "Student at IIT Delhi"
       },
       {
         "name": "Aryan Soni",
         "exrole": "Member",
         "pfp": "/pics/aryan_soni.webp",
         "batch": "2024-2025",
-        "status": "Outgoing Batch"
+        "status": "Student at Jain University"
       },
       {
         "name": "Kaiwalya Jain",
         "exrole": "Member",
         "pfp": "/pics/kaiwalya_jain.webp",
         "batch": "2024-2025",
-        "status": "Outgoing Batch"
+        "status": "Student at MUJ"
       },
       {
         "name": "Pranjall Pahuja",

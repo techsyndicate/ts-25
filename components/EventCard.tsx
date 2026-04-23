@@ -13,7 +13,7 @@ function EventCard(props: EventCardProps) {
       className={`absolute w-[22vw] rounded-lg bg-[#191919] ${props.styles} py-[1.875vw] pl-[1.875vw]`}
     >
       <h1 className="text-[1.7vw] font-medium">{props.title}</h1>
-      {props.date === "May 18 - Jun 5" ? (
+      {props.title != "Training Grounds" ? (
         <p className="text-[1.4vw] text-[rgba(255,255,255,0.6)]">
           {props.date}
         </p>
@@ -27,7 +27,9 @@ function EventCard(props: EventCardProps) {
             boxShadow:
               "0 14px 28px rgba(22,225,110,0.25), 0 5px 10px rgba(22,225,110,0.22)",
           }}
-          onClick={() => {window.open(props.link || 'https://techsyndicate.us', '_blank')}}
+          onClick={() => {
+            window.open(props.link || "https://techsyndicate.us", "_blank");
+          }}
         >
           Join
         </button>

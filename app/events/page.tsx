@@ -27,17 +27,20 @@ function Events() {
         <div className="mt-[10vw] md:mt-[-5vh] flex flex-col items-center justify-center md:block md:relative blobs">
           {isMobile ? (
             <>
-              <MobileEventCard title="InTech" date="May 18 - Jun 5" />
+              <MobileEventCard title="Training Grounds" date="Apr 25 Onwards" link="/tg" />
               <img src="./events/mobile/line2.svg" alt="" />
-              <MobileEventCard title="Robotronics" date="Aug 8 - Aug 20" link="/robotronics" />
+              <MobileEventCard title="inTech" date="TBD - TBD" />
+              <img src="./events/mobile/line2.svg" alt="" />
+              <MobileEventCard title="Robotronics" date="TBD - TBD" />
               <div className="w-[100%] h-[12vw]"></div>
             </>
           ) : (
             <>
               <EventCard
-                title="InTech"
-                date="May 18 - Jun 5"
+                title="Training Grounds"
+                date="Apr 25 Onwards"
                 styles="top-[9vw] left-[26.5vw]"
+                link="/tg"
               />
               <img
                 className="absolute top-[14.625vw] w-[17.3vw] left-[48.5vw]"
@@ -45,12 +48,21 @@ function Events() {
                 alt=""
               />
               <EventCard
-                title="Robotronics"
-                date="Aug 8 - Aug 19"
+                title="inTech"
+                date="TBD - TBD"
                 styles="top-[28.8vw] right-[26.5vw]"
-                link='/robotronics'
               />
-              <div className="absolute top-[37.6vw] left-[26.5vw] w-[22vw] h-[4.5vw] mt-[2.5vw]"></div>
+              <img
+                className="absolute top-[31.625vw] w-[17.3vw] left-[34.2vw]"
+                src="./events/line2.svg"
+                alt=""
+              />
+              <EventCard
+                title="Robotronics"
+                date="TBD - TBD"
+                styles="top-[46.55vw] left-[26.5vw]"
+              />
+              <div className="absolute top-[51.55vw] left-[26.5vw] w-[22vw] h-[4.5vw] mt-[2.5vw]"></div>
             </>
           )}
         </div>
